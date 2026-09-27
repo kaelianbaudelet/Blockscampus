@@ -1,45 +1,55 @@
-import { NOTSpace, type CAS, type Workspace } from "@/types/authentication";
-import { type InfoMobileResponse } from "@/types/responses/authentication";
+import { HPSpace, HPSpaceNames, HPSpacePaths, type Workspace } from "@/types/authentication";
 import { Request } from "@/structures/network/Request";
-import { INFO_MOBILE_ID } from "@/utils/constants";
+import { Session } from "@/structures/Session";
+import { NetworkError } from "@/structures/errors/NetworkError";
 
 export class Instance {
   constructor(
     public source: string,
-    public workspaces: Workspace[] = [],
-    public version: number[] = [],
-    public cas?: CAS
+    public workspaces: Workspace[] = []
   ) {}
 
+  /**
+   * Discovers the workspaces available on a PRONOTE Campus instance.
+   * Unlike PRONOTE, there is no `InfoMobileApp.json`: each known workspace page is probed.
+   */
   public static async createFromURL(source: string | URL): Promise<Instance> {
     source = this.cleanUrl(source);
-    const { data } = await new Request()
-      .setEndpoint(`${source}InfoMobileApp.json?id=${INFO_MOBILE_ID}`)
-      .send<InfoMobileResponse>();
-    const availableWorkspaces = data.espaces
-      .filter((raw) => raw.genreEspace !== undefined)
-      .map((raw) => ({
-        delegated: raw.avecDelegation ?? false,
-        url:       raw.URL,
-        name:      raw.nom,
-        type:      raw.genreEspace as NOTSpace
-      }));
 
-    const version = data.version;
-    let cas: CAS | undefined;
+    const spaces = Object.values(HPSpace).filter((v): v is HPSpace => typeof v === "number");
+    const probes = await Promise.all(spaces.map(async (type) => {
+      const url = HPSpacePaths[type];
+      try {
+        const response = await new Request().setEndpoint(`${source}${url}?fd=1`).send<string>();
+        if (typeof response.data !== "string" || !Session.parseStart(response.data)) return undefined;
+        return { url, type, name: HPSpaceNames[type] } satisfies Workspace;
+      } catch {
+        return undefined;
+      }
+    }));
 
-    if (data.CAS.actif) {
-      cas = { url: data.CAS.casURL, token: data.CAS.jetonCAS };
+    const workspaces = probes.filter((w): w is Workspace => w !== undefined);
+    if (workspaces.length === 0) {
+      throw new NetworkError("Unable to find any PRONOTE Campus workspace at this URL", 404);
     }
 
-    return new Instance(source, availableWorkspaces, version, cas);
+    return new Instance(source, workspaces);
   }
 
-  public static cleanUrl(source: string | URL): string {
-    const url = source instanceof URL ? source : new URL(source.trim().startsWith("http") ? source : "https://" + source);
-    const pathSegments = url.pathname.split("/").filter(Boolean);
+  public workspace(type: HPSpace): Workspace | undefined {
+    return this.workspaces.find((w) => w.type === type);
+  }
 
-    while (pathSegments.at(-1)?.toLowerCase().endsWith(".html")) {
+  /** Normalizes an instance URL, e.g. `https://x.fr/hp/etudiant?fd=1` becomes `https://x.fr/hp/`. */
+  public static cleanUrl(source: string | URL): string {
+    const url = source instanceof URL ? source : new URL(source.trim().startsWith("http") ? source.trim() : "https://" + source.trim());
+    const pathSegments = url.pathname.split("/").filter(Boolean);
+    const spacePaths = Object.values(HPSpacePaths);
+
+    while (pathSegments.length && (
+      pathSegments.at(-1)!.toLowerCase().endsWith(".html") ||
+      spacePaths.includes(pathSegments.at(-1)!.toLowerCase())
+    )) {
       pathSegments.pop();
     }
 

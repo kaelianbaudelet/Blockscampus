@@ -27,6 +27,13 @@ export class DateParser {
     return `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
   }
 
+  /** Encodes a date as `dd/mm/yyyy`, the format expected by PRONOTE Campus. */
+  static encodeDay(v: Date): string {
+    const day = String(v.getDate()).padStart(2, "0");
+    const month = String(v.getMonth() + 1).padStart(2, "0");
+    return `${day}/${month}/${v.getFullYear()}`;
+  }
+
   static parse(v: string) {
     if (DateParser.shortDateRegex.test(v)) {
       return DateParser.shortDate(v)

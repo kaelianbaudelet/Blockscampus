@@ -1,43 +1,35 @@
-import { type User, Authenticator, Instance } from '../../src';
-import { input, password, select } from '@inquirer/prompts';
-import chalk from 'chalk';
+import { type User, Authenticator, Instance } from "../../src";
+import { input, password, select } from "@inquirer/prompts";
+import chalk from "chalk";
+
+export const DEMO_URL = "https://hpdemofr.hyperplanning.fr/hp/";
 
 if (require.main === module) {
   main();
 }
 
 async function main(): Promise<User> {
-  const url = await input({ message: "Enter the school's instance URL:", required: true, default: "https://demo.index-education.net/pronote/" })
+  const url = await input({ message: "Enter the school's instance URL:", required: true, default: DEMO_URL })
   const instance = await Instance.createFromURL(url);
-  const authenticator =  new Authenticator(instance);
-
-  const availableWorkspaces = instance.workspaces.filter(workspace => !workspace.delegated)
-
-  if (availableWorkspaces.length === 0) {
-    throw new Error("The workspaces of your instance are currently unavailable or require authentication via CAS.")
-  }
+  const authenticator = new Authenticator(instance);
 
   const workspace = await select({
     message: "Choose your Workspace",
-    choices: availableWorkspaces
-      .map((workspace) => ({
-        name: workspace.name,
-        value: workspace
-      }))
+    choices: instance.workspaces.map((workspace) => ({ name: workspace.name, value: workspace }))
   })
 
   authenticator.useWorkspace(workspace);
   await askForCredentials(authenticator);
 
   const account = await authenticator.finalize();
-  console.log(chalk.green("\n*"), "You're authenticated as", chalk.blue(account.user.fullName))
+  console.log(chalk.green("\n*"), "You're authenticated as", chalk.blue(account.info.fullName))
 
   return account;
 }
 
 export async function askForCredentials(authenticator: Authenticator, defaultUsername = "AUDIBERT") {
   const username = await input({ message: "Username:", required: true, default: defaultUsername })
-  const pwd = await password({ message: "Password:", mask: "*" })
+  const pwd = await password({ message: "Password (demodemo on the demo):", mask: "*" })
   await authenticator.credentials(username, pwd)
 
   const security = authenticator.security;

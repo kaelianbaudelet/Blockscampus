@@ -1,59 +1,90 @@
-import type { TimetableOptions } from "@/types/timetable";
-import type { Class } from "@/types/user";
 import type { Instance } from "@/structures/Instance";
-import { Timetable } from "@/routes/PageEmploiDuTemps/Common";
-import { CommonUserSettings } from "@/routes/ParametresUtilisateurs/Common";
-import type { StudentUserSettings } from "@/routes/ParametresUtilisateurs/Student";
-import type { TeacherUserSettings } from "@/routes/ParametresUtilisateurs/Teacher";
-import type { Ressource } from "@/types/timetable";
-import { Session } from "@/structures/Session";
+import { Schedule } from "@/structures/Schedule";
+import type { Session } from "@/structures/Session";
 import type { Settings } from "@/structures/Settings";
+import { Timetable } from "@/routes/FonctionEmploiDuTemps/Timetable";
+import type { AuthentificationResponse } from "@/types/responses/authentication";
+import type { DemandeParametreUtilisateurResponse, HPTab } from "@/types/responses/user";
+import type { Calendar, MenuTab, UserInfo } from "@/types/user";
+import type { TimetableOptions } from "@/types/timetable";
 
 export class User {
+  public readonly schedule: Schedule;
+
   constructor(
     public session: Session,
-    public user: CommonUserSettings,
+    public settings: Settings,
     public instance: Instance,
-    public settings: Settings
-  ) { }
-
-  public static async load(
-    session: Session,
-    settings: Settings,
-    instance: Instance
-  ): Promise<User> {
-    const user = await CommonUserSettings.load(session, settings);
-    return new this(session, user, instance, settings);
+    public info: UserInfo,
+    public parameters: DemandeParametreUtilisateurResponse,
+    public authentication: AuthentificationResponse
+  ) {
+    this.schedule = new Schedule(settings.schedule, parameters.Horaire);
   }
 
-  protected _timetable(
-    target: Class | StudentUserSettings | TeacherUserSettings | Class[],
-    options?: TimetableOptions
-  ): Promise<Timetable> {
-    const res: Ressource | Ressource[] = Array.isArray(target)
-      ? target.map((t) => ({ G: t.kind, N: t.id}))
-      : { G: target.kind, N: target.id};
+  /**
+   * Loads the user settings. `DemandeParametreUtilisateur` must be called right after
+   * the authentication: until then, the server answers "droits insuffisants" to every function.
+   */
+  public static async load<T extends User>(
+    this: new (...args: ConstructorParameters<typeof User>) => T,
+    session: Session,
+    settings: Settings,
+    instance: Instance,
+    authentication: AuthentificationResponse
+  ): Promise<T> {
+    const parameters = await session.call<DemandeParametreUtilisateurResponse>("DemandeParametreUtilisateur");
+    const u = authentication.Utilisateur;
 
-    if (!options?.from || !options?.to) {
-      const d = new Date();
-      const day = d.getDay();
-      const diff = (day === 0 ? -6 : 1) - day;
+    const info: UserInfo = {
+      id:         u?.id ?? "",
+      kind:       u?.G,
+      name:       u?.label ?? authentication.libelleUtil ?? "",
+      fullName:   u?.NomComplet ?? authentication.libelleUtil ?? u?.label ?? "",
+      email:      u?.Email,
+      promotions: u?.ListeRessources ?? []
+    };
 
-      const from = new Date(d);
-      from.setDate(d.getDate() + diff);
+    return new this(session, settings, instance, info, parameters, authentication);
+  }
 
-      const to = new Date(from);
-      to.setDate(from.getDate() + 6);
+  /** Menu of the workspace, as allowed by the server. */
+  public get tabs(): MenuTab[] {
+    const map = (t: HPTab): MenuTab => ({ id: t.G, label: t.label, children: (t.listeOnglets ?? []).map(map) });
+    return this.parameters.listeOnglets.map(map);
+  }
 
-      options = { ...options, from, to } as TimetableOptions;
-    }
+  /** Whether a tab (e.g. `NOTATION.DERNIERESNOTES` or `NOTATION`) is available. */
+  public hasTab(path: string): boolean {
+    const [root, child] = path.split(".");
+    const tab = this.parameters.listeOnglets.find((t) => t.G === root);
+    return Boolean(tab && (!child || tab.listeOnglets?.some((c) => c.G === child)));
+  }
 
-    return Timetable.load(this, res, options);
+  /** Teaching calendars (semesters, internship periods...) with their weeks. */
+  public get calendars(): Calendar[] {
+    return (this.parameters.ListeCalendriers ?? []).map((c) => ({
+      id:      c.id,
+      label:   c.label,
+      periods: c.ListePeriodes.map((p) => ({ id: p.id, label: p.label, weeks: p.Domaine }))
+    }));
+  }
+
+  protected rangeOrCurrentWeek(from?: Date, to?: Date): { from: Date; to: Date } {
+    if (from && to) return { from, to };
+
+    const base = from ?? new Date();
+    const monday = new Date(base.getFullYear(), base.getMonth(), base.getDate() - ((base.getDay() + 6) % 7));
+    const sunday = new Date(monday.getFullYear(), monday.getMonth(), monday.getDate() + 7);
+    return { from: from ?? monday, to: to ?? sunday };
+  }
+
+  public timetable(options: TimetableOptions = {}): Promise<Timetable> {
+    const range = this.rangeOrCurrentWeek(options.from, options.to);
+    return Timetable.load(this.session, this.schedule, { ...options, ...range });
   }
 
   public weeknumber(date = new Date()): number {
-    const firstMonday = this.settings.schedule.firstMonday;
-    const days = Math.floor((date.getTime() - firstMonday.getTime()) / 86_400_000);
-    return Math.ceil((days + firstMonday.getDay() + 1) / 7);
+    return this.schedule.week(date);
   }
 }

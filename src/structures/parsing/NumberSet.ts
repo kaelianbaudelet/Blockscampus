@@ -26,4 +26,21 @@ export class NumberSet {
 
     return result;
   }
+
+  /** Encodes a list of numbers as a compact set, e.g. `[1..4,7]`. */
+  static encode(values: number[]): string {
+    const sorted = [...new Set(values)].sort((a, b) => a - b);
+    const parts: string[] = [];
+
+    for (let i = 0; i < sorted.length; i++) {
+      const start = sorted[i]!;
+      let end = start;
+      while (sorted[i + 1] === end + 1) {
+        end = sorted[++i]!;
+      }
+      parts.push(start === end ? String(start) : `${start}..${end}`);
+    }
+
+    return `[${parts.join(",")}]`;
+  }
 }
