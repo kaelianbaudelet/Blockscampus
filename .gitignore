@@ -142,8 +142,5 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
 
-# Large captured fixtures
-fixtures/**/FonctionEmploiDuTemps.liste.json
-fixtures/**/Progressions.contenu.json
-fixtures/**/ListeOffresStages.json
-fixtures/**/ContenuPedagogiqueEtTaf.*.json
+# Answers captured from the demo by scripts/capture.ts (local only)
+fixtures/

@@ -79,9 +79,9 @@ PRONOTE Campus (formerly HYPERPLANNING) shares the transport of PRONOTE (`appelf
 - **Files**: `FichiersExternes/<AES(JSON({ N, G? }))>/<name>?Session=<id>`.
 
 ### Reverse-engineering tools
-- `bun scripts/capture.ts <etudiant|parent|entreprise|enseignant>` logs into the demo (credentials read from `../identifiants.pronote-campus.txt`) and dumps every answer into `fixtures/<space>/`.
+- `bun scripts/capture.ts <etudiant|parent|entreprise|enseignant>` logs into the demo (credentials read from `../identifiants.pronote-campus.txt`) and dumps every answer into a local, git-ignored `fixtures/<space>/` folder.
 - `bun scripts/probe.ts <space> <user> <password> [calls.json]` calls arbitrary functions.
-- `bun test` runs offline tests on the fixtures.
+- `bun test` runs the offline unit tests (parser, schedule, challenge).
 
 ## Installation
 [Bun](https://bun.sh) is recommended for its faster startup time, built-in TypeScript support, and improved performance when handling cryptographic operations and data compression, while remaining fully compatible with Node.js.
