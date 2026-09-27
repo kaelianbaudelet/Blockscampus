@@ -1,0 +1,383 @@
+{
+  "id": "Progressions",
+  "session": 7241368,
+  "no": "6B94B4786D317DA6D0A86ED75F66AB54",
+  "dataSec": {
+    "data": {
+      "ListeCours": [
+        {
+          "N": "10#yUo7as90F5gT8-bpW3067j5PDAGa_m7pR_X2UdRxoPg",
+          "G": 3,
+          "p": 15,
+          "d": 4,
+          "e": 3,
+          "co": "#4FD12E",
+          "nbE": 32,
+          "listeC": [
+            {
+              "G": 0,
+              "C": {
+                "L": "MARKETING DIGITAL",
+                "N": "25#1LCbg92z9TpF8dOdemACHmuFFCxh-WYlKRbNNbE4eKU",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 1,
+              "C": [
+                {
+                  "L": "BROCHIER",
+                  "N": "50#2mffNn28rQlKO_FpKGEOAv5jUOCmIey4xX3y0sjXZb8",
+                  "P": 6,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#Vm_XKGODOkwUgJ9mnpm3f754eKY5ltSBpdcrVeHRGI8",
+                  "P": 35,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 3,
+              "C": [
+                {
+                  "L": "Salle D",
+                  "N": "50#RfKkxjMKxtOHHrMsuKZNJIFgchyJ5Nb6c4WbfmTerio",
+                  "P": 183,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 6,
+              "C": "9"
+            },
+            {
+              "G": 11,
+              "C": [
+                {
+                  "L": "MARKETING DIGITAL",
+                  "N": "40#7rAyCObJbOsXj-7qqSx4YEl2I4KlG0_3UaRlq5ipvjo",
+                  "matiere": {
+                    "_T": 24,
+                    "V": {
+                      "L": "MARKETING DIGITAL",
+                      "N": "25#1LCbg92z9TpF8dOdemACHmuFFCxh-WYlKRbNNbE4eKU",
+                      "G": 0,
+                      "p": true
+                    }
+                  },
+                  "avecContenu": true,
+                  "titreContenu": "Les leviers du marketing digital",
+                  "avecContenuPJ": false,
+                  "avecTAD": true,
+                  "avecTADPJ": true,
+                  "avecTAF": false,
+                  "avecDocuments": false,
+                  "NpC": "Les leviers du marketing digital",
+                  "DPC": {
+                    "_T": 21,
+                    "V": ""
+                  },
+                  "ListePJ": {
+                    "_T": 24,
+                    "V": []
+                  },
+                  "sites": {
+                    "_T": 24,
+                    "V": []
+                  },
+                  "listeTAFDe": {
+                    "_T": 24,
+                    "V": [
+                      {
+                        "N": "42#pG1OzIgvr-JVGoqYRULjmrD2esMDfg7qsGDldvy8zH8",
+                        "G": 0,
+                        "genreRenduTAF": 0,
+                        "copiePeutEtreDeposee": false,
+                        "service": {
+                          "_T": 24,
+                          "V": {
+                            "N": "53#hdFNDDu7Mvk1iUunBYmm1amyMw5Pzcr2hS280T-t3mM",
+                            "G": 24
+                          }
+                        },
+                        "descriptif": {
+                          "_T": 21,
+                          "V": "<div style=\"font-family: arial,helvetica,sans-serif; font-size: 13px;\">Remplir le tableau comparatif Owned / Paid / Earned Media ci-joint.&nbsp;</div>"
+                        },
+                        "nrSeanceDonne": 9,
+                        "dateDonne": {
+                          "_T": 7,
+                          "V": "14/09/2026 15:30:00"
+                        },
+                        "nrSeancePour": 10,
+                        "datePour": {
+                          "_T": 7,
+                          "V": "22/09/2026 10:30:00"
+                        },
+                        "listeDocuments": {
+                          "_T": 24,
+                          "V": [
+                            {
+                              "L": "TABLEAU COMPARATIF OWNED.pdf",
+                              "N": "13#mit5gNG4mHIoALXkxz32LEO86wzMli28Ivt_fC8DnW8"
+                            }
+                          ]
+                        },
+                        "avecContenu": true,
+                        "contenu": {
+                          "_T": 24,
+                          "V": {
+                            "L": "MARKETING DIGITAL",
+                            "nomProgrammeContenu": "Les leviers du marketing digital",
+                            "descriptionProgrammeContenu": {
+                              "_T": 21,
+                              "V": ""
+                            },
+                            "documentsProgramme": {
+                              "_T": 24,
+                              "V": []
+                            },
+                            "sitesProgramme": {
+                              "_T": 24,
+                              "V": []
+                            },
+                            "listeDocJoints": {
+                              "_T": 24,
+                              "V": []
+                            },
+                            "listeSites": {
+                              "_T": 24,
+                              "V": []
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "avecVisio": true,
+          "listeLiensVisio": {
+            "_T": 24,
+            "V": [
+              {
+                "L": "Visioconférence",
+                "N": "78#Ez5WRhiKz9hMpmB9E_zAQFz9husgEtpUmt1PU-AAX0Y",
+                "libelleLien": "Visioconférence",
+                "url": "https://www.index-education.com/fr/presentation-hyperplanning.php",
+                "commentaire": "Connectez-vous avec vos identifiants habituels.",
+                "descriptif": "<a href=\"https://www.index-education.com/fr/presentation-hyperplanning.php\">Visioconférence</a><br />https://www.index-education.com/fr/presentation-hyperplanning.php<br />Connectez-vous avec vos identifiants habituels.",
+                "concerneProgression": false
+              }
+            ]
+          }
+        },
+        {
+          "N": "10#h6X6ePv08ME5VxxkZ9tRsXNQdzWNVYq2SHdWwA-Zj6E",
+          "G": 4,
+          "p": 25,
+          "d": 4,
+          "e": 3,
+          "co": "#4FD12E",
+          "nbE": 32,
+          "listeC": [
+            {
+              "G": 0,
+              "C": {
+                "L": "MARKETING DIGITAL",
+                "N": "25#1LCbg92z9TpF8dOdemACHmuFFCxh-WYlKRbNNbE4eKU",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 1,
+              "C": [
+                {
+                  "L": "BROCHIER",
+                  "N": "50#2mffNn28rQlKO_FpKGEOAv5jUOCmIey4xX3y0sjXZb8",
+                  "P": 6,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#Vm_XKGODOkwUgJ9mnpm3f754eKY5ltSBpdcrVeHRGI8",
+                  "P": 35,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 3,
+              "C": [
+                {
+                  "L": "Salle D",
+                  "N": "50#RfKkxjMKxtOHHrMsuKZNJIFgchyJ5Nb6c4WbfmTerio",
+                  "P": 183,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 6,
+              "C": "10"
+            },
+            {
+              "G": 11,
+              "C": [
+                {
+                  "L": "MARKETING DIGITAL",
+                  "N": "40#7rAyCObJbOsXj-7qqSx4YEl2I4KlG0_3UaRlq5ipvjo",
+                  "matiere": {
+                    "_T": 24,
+                    "V": {
+                      "L": "MARKETING DIGITAL",
+                      "N": "25#1LCbg92z9TpF8dOdemACHmuFFCxh-WYlKRbNNbE4eKU",
+                      "G": 0,
+                      "p": true
+                    }
+                  },
+                  "avecContenu": true,
+                  "titreContenu": "Les leviers du marketing digital",
+                  "avecContenuPJ": false,
+                  "avecTAD": false,
+                  "avecTAF": true,
+                  "avecTAFPJ": true,
+                  "avecDocuments": false,
+                  "NpC": "Les leviers du marketing digital",
+                  "DPC": {
+                    "_T": 21,
+                    "V": ""
+                  },
+                  "ListePJ": {
+                    "_T": 24,
+                    "V": []
+                  },
+                  "sites": {
+                    "_T": 24,
+                    "V": []
+                  },
+                  "listeTAFPour": {
+                    "_T": 24,
+                    "V": [
+                      {
+                        "N": "42#pG1OzIgvr-JVGoqYRULjmrD2esMDfg7qsGDldvy8zH8",
+                        "G": 0,
+                        "genreRenduTAF": 0,
+                        "copiePeutEtreDeposee": false,
+                        "service": {
+                          "_T": 24,
+                          "V": {
+                            "N": "53#hdFNDDu7Mvk1iUunBYmm1amyMw5Pzcr2hS280T-t3mM",
+                            "G": 24
+                          }
+                        },
+                        "descriptif": {
+                          "_T": 21,
+                          "V": "<div style=\"font-family: arial,helvetica,sans-serif; font-size: 13px;\">Remplir le tableau comparatif Owned / Paid / Earned Media ci-joint.&nbsp;</div>"
+                        },
+                        "nrSeanceDonne": 9,
+                        "dateDonne": {
+                          "_T": 7,
+                          "V": "14/09/2026 15:30:00"
+                        },
+                        "nrSeancePour": 10,
+                        "datePour": {
+                          "_T": 7,
+                          "V": "22/09/2026 10:30:00"
+                        },
+                        "listeDocuments": {
+                          "_T": 24,
+                          "V": [
+                            {
+                              "L": "TABLEAU COMPARATIF OWNED.pdf",
+                              "N": "13#mit5gNG4mHIoALXkxz32LEO86wzMli28Ivt_fC8DnW8"
+                            }
+                          ]
+                        },
+                        "avecContenu": true,
+                        "contenu": {
+                          "_T": 24,
+                          "V": {
+                            "L": "MARKETING DIGITAL",
+                            "nomProgrammeContenu": "Les leviers du marketing digital",
+                            "descriptionProgrammeContenu": {
+                              "_T": 21,
+                              "V": ""
+                            },
+                            "documentsProgramme": {
+                              "_T": 24,
+                              "V": []
+                            },
+                            "sitesProgramme": {
+                              "_T": 24,
+                              "V": []
+                            },
+                            "listeDocJoints": {
+                              "_T": 24,
+                              "V": []
+                            },
+                            "listeSites": {
+                              "_T": 24,
+                              "V": []
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "avecVisio": true,
+          "listeLiensVisio": {
+            "_T": 24,
+            "V": [
+              {
+                "L": "Visioconférence",
+                "N": "78#Ez5WRhiKz9hMpmB9E_zAQFz9husgEtpUmt1PU-AAX0Y",
+                "libelleLien": "Visioconférence",
+                "url": "https://www.index-education.com/fr/presentation-hyperplanning.php",
+                "commentaire": "Connectez-vous avec vos identifiants habituels.",
+                "descriptif": "<a href=\"https://www.index-education.com/fr/presentation-hyperplanning.php\">Visioconférence</a><br />https://www.index-education.com/fr/presentation-hyperplanning.php<br />Connectez-vous avec vos identifiants habituels.",
+                "concerneProgression": false
+              }
+            ]
+          }
+        }
+      ],
+      "ListeAnnulationsCours": [],
+      "OrdreContenuDuCours": [
+        0,
+        1,
+        13,
+        12,
+        14,
+        15,
+        3,
+        6,
+        11
+      ],
+      "stages": {}
+    },
+    "nom": "Progressions"
+  }
+}

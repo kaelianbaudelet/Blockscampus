@@ -1,0 +1,51 @@
+{
+  "id": "Authentification",
+  "session": 7109868,
+  "no": "C4C6F409FFE10D6E8EC7B3904EBB3875",
+  "dataSec": {
+    "data": {
+      "Utilisateur": {
+        "_T": 24,
+        "V": {
+          "L": "AUDIBERT Julien",
+          "N": "18#e8W8-7IjHisldQiJftJKH1pV1GqGc2BWLZbZM-T5QkI",
+          "G": 2,
+          "NomComplet": "AUDIBERT Julien",
+          "nom": "AUDIBERT",
+          "Email": "Julien.AUDIBERT@fai.com",
+          "ListeRessources": {
+            "_T": 24,
+            "V": [
+              {
+                "L": "RELATION COMMERCE DIGITAL 1",
+                "N": "50#3VVX7b2FRiVrgGgPz-7arjiJfTmxNuqAKFCHiZwaG4A",
+                "G": 1
+              }
+            ]
+          }
+        }
+      },
+      "ISIDENTIFIED": true,
+      "libelleUtil": "AUDIBERT Julien",
+      "cle": "<redacted>",
+      "ICALDiplomes": true,
+      "ICALEtudiants": false,
+      "ICALEtudiantsPerso": true,
+      "ICALSalles": false,
+      "ICALMatieres": false,
+      "ICALEnseignant": false,
+      "ICALEnseignantPersonnel": false,
+      "modeSecurisationParDefaut": 1,
+      "reglesSaisieMDP": {
+        "min": 12,
+        "max": 32,
+        "regles": {
+          "_T": 26,
+          "V": "[0..3]"
+        }
+      },
+      "codePINFixe": true
+    },
+    "nom": "Authentification"
+  }
+}

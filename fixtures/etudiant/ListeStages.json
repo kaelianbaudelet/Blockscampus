@@ -1,0 +1,19 @@
+{
+  "id": "ListeStages",
+  "session": 5019806,
+  "no": "09D35C9455E0FB5E4689973C56921C4C",
+  "dataSec": {
+    "data": {
+      "listeStages": {
+        "_T": 24,
+        "V": [
+          {
+            "L": "du 09/09/26 au 18/06/27 - Animation du réseau",
+            "N": "57#bf9bBECXZWfwL9huOIUn_eFekf_Rlr421xU6yBXfDGg"
+          }
+        ]
+      }
+    },
+    "nom": "ListeStages"
+  }
+}

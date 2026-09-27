@@ -1,0 +1,57 @@
+{
+  "id": "Compte",
+  "session": 1996744,
+  "no": "DFCFDB7202F96176D5C8DBD3ABEE801F",
+  "dataSec": {
+    "data": {
+      "reglesSaisieMDP": {
+        "min": 12,
+        "max": 32,
+        "regles": {
+          "_T": 26,
+          "V": "[0..3]"
+        }
+      },
+      "Nom": "M. ANTOINE Louis",
+      "Adresse1": "",
+      "Adresse2": "",
+      "Adresse3": "",
+      "Adresse4": "",
+      "CodePostal": "",
+      "Ville": {
+        "_T": 24,
+        "V": {
+          "N": "0"
+        }
+      },
+      "Province": {
+        "_T": 24,
+        "V": {
+          "N": "0"
+        }
+      },
+      "Pays": {
+        "_T": 24,
+        "V": {
+          "N": "0"
+        }
+      },
+      "Email": "louis.antoine@fournisseur.fr",
+      "SiteInternet": "",
+      "IndicatifTel": "33",
+      "IndicatifFixe": "",
+      "TelFixe": "",
+      "IndicatifFax": "",
+      "Fax": "",
+      "SMS": "0628765922",
+      "AutoriseSMS": false,
+      "DestCouriers": false,
+      "avecCBAutorisations": true,
+      "DestSMSIndependant": false,
+      "DestCouriersIndependant": false,
+      "avecProvinces": false,
+      "avecPays": true
+    },
+    "nom": "Compte"
+  }
+}

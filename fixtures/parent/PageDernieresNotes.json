@@ -1,0 +1,267 @@
+{
+  "id": "PageDernieresNotes",
+  "session": 7241368,
+  "no": "9938EAE018CA2A5BC7D56580D830D887",
+  "dataSec": {
+    "data": {
+      "avecDetailsService": true,
+      "avecDetailsDevoir": true,
+      "listeDevoirs": {
+        "_T": 24,
+        "V": [
+          {
+            "N": "15#a6W6R_E6zIPHJt1m8VsGR9ReXX0VoaRRDD87GwKFuTI",
+            "G": 25,
+            "moyenne": {
+              "_T": 10,
+              "V": "11,28"
+            },
+            "genrePublic": 2,
+            "service": {
+              "_T": 24,
+              "V": {
+                "N": "52#xTZI0c7FCnyQ52fAYcPjIh5C8c7mn-Ls7DdQy2aOq2o"
+              }
+            },
+            "date": {
+              "_T": 7,
+              "V": "13/09/2026"
+            },
+            "coefficient": {
+              "_T": 10,
+              "V": "1"
+            },
+            "commentaire": "",
+            "note": {
+              "_T": 10,
+              "V": "12"
+            },
+            "estRamenerSur20": true,
+            "estFacultatifBonus": false,
+            "estFacultatifNote": false,
+            "estFacultatifSeuil": false,
+            "bareme": {
+              "_T": 10,
+              "V": "20"
+            },
+            "noteMin": {
+              "_T": 10,
+              "V": "0"
+            },
+            "noteMax": {
+              "_T": 10,
+              "V": "18"
+            },
+            "estDS": false
+          },
+          {
+            "N": "15#cXOhPX-Oj34SFGuB27FwOiPiEmH86BJytlV9VkciSEQ",
+            "G": 25,
+            "moyenne": {
+              "_T": 10,
+              "V": "10,03"
+            },
+            "genrePublic": 2,
+            "service": {
+              "_T": 24,
+              "V": {
+                "N": "52#Hg81T32EcLO8lsUdhss7IIaZuDvNhPY9CUOZiWI4-3Q"
+              }
+            },
+            "date": {
+              "_T": 7,
+              "V": "27/09/2026"
+            },
+            "coefficient": {
+              "_T": 10,
+              "V": "1"
+            },
+            "commentaire": "",
+            "note": {
+              "_T": 10,
+              "V": "12"
+            },
+            "estRamenerSur20": true,
+            "estFacultatifBonus": false,
+            "estFacultatifNote": false,
+            "estFacultatifSeuil": false,
+            "bareme": {
+              "_T": 10,
+              "V": "20"
+            },
+            "noteMin": {
+              "_T": 10,
+              "V": "0"
+            },
+            "noteMax": {
+              "_T": 10,
+              "V": "20"
+            },
+            "estDS": false
+          },
+          {
+            "N": "15#NYKsuYyL0OP61zcNkCksOFQoit4N9GWCU30dq5Ku_SE",
+            "G": 25,
+            "moyenne": {
+              "_T": 10,
+              "V": "10,56"
+            },
+            "genrePublic": 2,
+            "service": {
+              "_T": 24,
+              "V": {
+                "N": "52#Tmh2Yq3QFOejl5IYgvJeuibT7VLnmPPTLQdrB8gacC0"
+              }
+            },
+            "date": {
+              "_T": 7,
+              "V": "10/09/2026"
+            },
+            "coefficient": {
+              "_T": 10,
+              "V": "1"
+            },
+            "commentaire": "",
+            "note": {
+              "_T": 10,
+              "V": "18"
+            },
+            "estRamenerSur20": true,
+            "estFacultatifBonus": false,
+            "estFacultatifNote": false,
+            "estFacultatifSeuil": false,
+            "bareme": {
+              "_T": 10,
+              "V": "20"
+            },
+            "noteMin": {
+              "_T": 10,
+              "V": "0"
+            },
+            "noteMax": {
+              "_T": 10,
+              "V": "20"
+            },
+            "estDS": false
+          }
+        ]
+      },
+      "listeServices": {
+        "_T": 24,
+        "V": [
+          {
+            "N": "52#xTZI0c7FCnyQ52fAYcPjIh5C8c7mn-Ls7DdQy2aOq2o",
+            "G": 13,
+            "baremeService": {
+              "_T": 10,
+              "V": "20"
+            },
+            "matiere": {
+              "_T": 24,
+              "V": {
+                "L": "INFORMATIQUE COMMERCIALE",
+                "N": "25#0RfK5DW72WjqKDKTWlEkUzMZqjsQeFnY5TcLGAbbYXE",
+                "G": 7,
+                "couleur": "#F3D0B4",
+                "moyenneEtudiant": {
+                  "_T": 10,
+                  "V": "12"
+                },
+                "moyenneClasse": {
+                  "_T": 10,
+                  "V": "11,28"
+                },
+                "moyenneMin": {
+                  "_T": 10,
+                  "V": "0"
+                },
+                "moyenneMax": {
+                  "_T": 10,
+                  "V": "18"
+                },
+                "nbNotesEleve": 1
+              }
+            }
+          },
+          {
+            "N": "52#Hg81T32EcLO8lsUdhss7IIaZuDvNhPY9CUOZiWI4-3Q",
+            "G": 13,
+            "baremeService": {
+              "_T": 10,
+              "V": "20"
+            },
+            "matiere": {
+              "_T": 24,
+              "V": {
+                "L": "BTS BLANC",
+                "N": "25#N2VXECsgri85HwMqXZVMxDnxHr-m60tO8BO3jtvdqLs",
+                "G": 7,
+                "couleur": "#FFFFFF",
+                "moyenneEtudiant": {
+                  "_T": 10,
+                  "V": "12"
+                },
+                "moyenneClasse": {
+                  "_T": 10,
+                  "V": "10,03"
+                },
+                "moyenneMin": {
+                  "_T": 10,
+                  "V": "0"
+                },
+                "moyenneMax": {
+                  "_T": 10,
+                  "V": "20"
+                },
+                "nbNotesEleve": 1
+              }
+            }
+          },
+          {
+            "N": "52#Tmh2Yq3QFOejl5IYgvJeuibT7VLnmPPTLQdrB8gacC0",
+            "G": 13,
+            "baremeService": {
+              "_T": 10,
+              "V": "20"
+            },
+            "matiere": {
+              "_T": 24,
+              "V": {
+                "L": "RELATION CLIENT",
+                "N": "25#dpAs45MbCJyS-gVdB9P99EgauS6c43HxTCA5q4kYWLw",
+                "G": 7,
+                "couleur": "#FFED00",
+                "moyenneEtudiant": {
+                  "_T": 10,
+                  "V": "18"
+                },
+                "moyenneClasse": {
+                  "_T": 10,
+                  "V": "10,56"
+                },
+                "moyenneMin": {
+                  "_T": 10,
+                  "V": "0"
+                },
+                "moyenneMax": {
+                  "_T": 10,
+                  "V": "20"
+                },
+                "nbNotesEleve": 1
+              }
+            }
+          }
+        ]
+      },
+      "moyenneGeneraleEtudiant": {
+        "_T": 10,
+        "V": "14"
+      },
+      "moyenneGeneralePromo": {
+        "_T": 10,
+        "V": "10,65"
+      }
+    },
+    "nom": "PageDernieresNotes"
+  }
+}

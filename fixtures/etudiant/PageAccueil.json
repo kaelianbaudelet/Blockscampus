@@ -1,0 +1,17 @@
+{
+  "id": "PageAccueil",
+  "session": 7109868,
+  "no": "BEEA01D72623D57F0C51B8BCECE0F9FE",
+  "dataSec": {
+    "data": {
+      "PeriodeConsultation": {
+        "_T": 8,
+        "V": "[1..62]"
+      }
+    },
+    "nom": "PageAccueil",
+    "Signature": {
+      "Erreur": true
+    }
+  }
+}

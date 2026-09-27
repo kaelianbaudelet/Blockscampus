@@ -1,0 +1,561 @@
+{
+  "id": "DemandeParametreUtilisateur",
+  "session": 4136435,
+  "no": "12BD34269D6C2AEFC3AFDFB3521134DC",
+  "dataSec": {
+    "data": {
+      "listeOnglets": [
+        {
+          "G": "ACCUEIL",
+          "L": "Accueil"
+        },
+        {
+          "G": "COURS",
+          "L": "Cours",
+          "listeOnglets": [
+            {
+              "G": "EDT",
+              "L": "Emploi du temps"
+            },
+            {
+              "G": "RECAPCOURS",
+              "L": "Récapitulatif des cours"
+            },
+            {
+              "G": "COURSANNULES",
+              "L": "Cours annulés"
+            },
+            {
+              "G": "INDISPOS",
+              "L": "Indisponibilités",
+              "listeOnglets": [
+                {
+                  "G": "INDISPOSDEMIJ",
+                  "L": "Par demi-journée"
+                },
+                {
+                  "G": "INDISPOSGRILLE",
+                  "L": "Par pas horaire"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "G": "NOTATION",
+          "L": "Notation",
+          "listeOnglets": [
+            {
+              "G": "SERVICENOTATION",
+              "L": "Modules et services"
+            },
+            {
+              "G": "NOTATIONSAISIE",
+              "L": "Saisie",
+              "listeOnglets": [
+                {
+                  "G": "SAISIENOTES",
+                  "L": "Saisie des notes"
+                },
+                {
+                  "G": "APPBULLETIN",
+                  "L": "Saisie des appréciations"
+                },
+                {
+                  "G": "SAISIEPIEDBULLETIN",
+                  "L": "Saisie du pied de bulletin"
+                }
+              ]
+            },
+            {
+              "G": "DEVOIRSURVEILLE",
+              "L": "Devoirs surveillés"
+            },
+            {
+              "G": "RELEVENOTES",
+              "L": "Relevé de notes"
+            },
+            {
+              "G": "GENERAL_BULLETIN",
+              "L": "Bulletin",
+              "listeOnglets": [
+                {
+                  "G": "BULLETIN",
+                  "L": "Bulletin de l'étudiant"
+                },
+                {
+                  "G": "BULLETINMULTIANNEES",
+                  "L": "Bulletin multiannée"
+                }
+              ]
+            },
+            {
+              "G": "RECAPECTS",
+              "L": "Récapitulatif"
+            },
+            {
+              "G": "GENERAL_RESULTATS",
+              "L": "Résultats",
+              "listeOnglets": [
+                {
+                  "G": "RESULTATS",
+                  "L": "Tableau des moyennes"
+                },
+                {
+                  "G": "RESULTATSGRAPHE",
+                  "L": "Graphique des résultats"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "G": "COMPETENCES",
+          "L": "Compétences",
+          "listeOnglets": [
+            {
+              "G": "SAISIEEVALCOMPETENCESPARPROMO",
+              "L": "Saisie des évaluations par promotion"
+            },
+            {
+              "G": "SAISIECOMPETENCES",
+              "L": "Évaluations des compétences"
+            },
+            {
+              "G": "RELEVEPERIODIQUECOMPETENCES",
+              "L": "Relevé de compétences"
+            }
+          ]
+        },
+        {
+          "G": "ENSEIGNEMENTS",
+          "L": "Enseignements",
+          "listeOnglets": [
+            {
+              "G": "PROGRESSION",
+              "L": "Progressions"
+            },
+            {
+              "G": "CHARGEDETRAVAIL",
+              "L": "Charge de travail"
+            },
+            {
+              "G": "SERVICESENSEIGNEMENT",
+              "L": "Services d'enseignement"
+            },
+            {
+              "G": "RESSOURCESPEDAGOGIQUES",
+              "L": "Ressources pédagogiques"
+            },
+            {
+              "G": "RESULTATEVALUATIONENSEIGNEMENT",
+              "L": "Résultats des évaluations"
+            }
+          ]
+        },
+        {
+          "G": "QCM",
+          "L": "QCM",
+          "listeOnglets": [
+            {
+              "G": "LISTEQCM",
+              "L": "Mes QCM"
+            },
+            {
+              "G": "BIBLIOQCM",
+              "L": "Bibliothèque de QCM"
+            }
+          ]
+        },
+        {
+          "G": "ABSENCE",
+          "L": "Assiduité",
+          "listeOnglets": [
+            {
+              "G": "SAISIEABSENCES",
+              "L": "Feuille d'appel"
+            },
+            {
+              "G": "RELEVEABSENCE",
+              "L": "Récapitulatif et relevé"
+            }
+          ]
+        },
+        {
+          "G": "STAGE",
+          "L": "En entreprise",
+          "listeOnglets": [
+            {
+              "G": "FICHESTAGE",
+              "L": "Fiche de suivi"
+            }
+          ]
+        },
+        {
+          "G": "ETUDIANT",
+          "L": "Étudiants",
+          "listeOnglets": [
+            {
+              "G": "EDT",
+              "L": "Emploi du temps"
+            },
+            {
+              "G": "RECAPCOURS",
+              "L": "Récapitulatif des cours"
+            },
+            {
+              "G": "COURSANNULES",
+              "L": "Cours annulés"
+            },
+            {
+              "G": "ETUDIANTS",
+              "L": "Liste et trombinoscope",
+              "listeOnglets": [
+                {
+                  "G": "LISTEETUDIANTS",
+                  "L": "Liste"
+                },
+                {
+                  "G": "TROMBINOSCOPE",
+                  "L": "Trombinoscope"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "G": "DIPLOME",
+          "L": "Promotions",
+          "listeOnglets": [
+            {
+              "G": "EDT",
+              "L": "Emploi du temps"
+            },
+            {
+              "G": "RECAPCOURS",
+              "L": "Récapitulatif des cours"
+            },
+            {
+              "G": "COURSANNULES",
+              "L": "Cours annulés"
+            },
+            {
+              "G": "ETUDIANTS",
+              "L": "Étudiants",
+              "listeOnglets": [
+                {
+                  "G": "LISTEETUDIANTS",
+                  "L": "Liste"
+                },
+                {
+                  "G": "TROMBINOSCOPE",
+                  "L": "Trombinoscope"
+                }
+              ]
+            },
+            {
+              "G": "INTERVENANTS",
+              "L": "Intervenants",
+              "listeOnglets": [
+                {
+                  "G": "LISTEINTERVENANTS",
+                  "L": "Liste"
+                },
+                {
+                  "G": "TROMBINOSCOPEENSEIGNANT",
+                  "L": "Trombinoscope"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "G": "ENSEIGNANT",
+          "L": "Enseignants",
+          "listeOnglets": [
+            {
+              "G": "EDT",
+              "L": "Emploi du temps"
+            },
+            {
+              "G": "RECAPCOURS",
+              "L": "Récapitulatif des cours"
+            }
+          ]
+        },
+        {
+          "G": "SALLE",
+          "L": "Salles",
+          "listeOnglets": [
+            {
+              "G": "EDT",
+              "L": "Emploi du temps"
+            },
+            {
+              "G": "SALLESLIBRES",
+              "L": "Salles libres"
+            },
+            {
+              "G": "HISTODEMANDES",
+              "L": "Historique des demandes"
+            }
+          ]
+        },
+        {
+          "G": "MATIERE",
+          "L": "Matières",
+          "listeOnglets": [
+            {
+              "G": "EDT",
+              "L": "Emploi du temps"
+            }
+          ]
+        },
+        {
+          "G": "COMMUNICATION",
+          "L": "Communication",
+          "listeOnglets": [
+            {
+              "G": "INFOSSONDAGES",
+              "L": "Informations et sondages"
+            }
+          ]
+        },
+        {
+          "G": "INFOSPERSO",
+          "L": "Informations personnelles",
+          "listeOnglets": [
+            {
+              "G": "COMPTE",
+              "L": "Compte"
+            },
+            {
+              "G": "EMAILSENVOYES",
+              "L": "E-Mails"
+            },
+            {
+              "G": "DOCUMENTSTELECHARGER",
+              "L": "Documents"
+            }
+          ]
+        }
+      ],
+      "AvecSaisie": true,
+      "Horaire": {
+        "genreLibelleGrille": 0,
+        "HorairesGrille": {
+          "_T": 26,
+          "V": "[0,2,4,6,8,10,12,14,16,18,20]"
+        },
+        "HorairesPlanning": {
+          "_T": 26,
+          "V": "[0,2,4,6,8,10,12,14,16,18,20]"
+        },
+        "SequencesGrille": {
+          "_T": 26,
+          "V": "[0..9]"
+        },
+        "SequencesPlanning": {
+          "_T": 26,
+          "V": "[0..9]"
+        },
+        "ListeHeures": [
+          {
+            "Debut": "08h00",
+            "Fin": "08h30"
+          },
+          {
+            "Debut": "08h30",
+            "Fin": "09h00"
+          },
+          {
+            "Debut": "09h00",
+            "Fin": "09h30"
+          },
+          {
+            "Debut": "09h30",
+            "Fin": "10h00"
+          },
+          {
+            "Debut": "10h00",
+            "Fin": "10h30"
+          },
+          {
+            "Debut": "10h30",
+            "Fin": "11h00"
+          },
+          {
+            "Debut": "11h00",
+            "Fin": "11h30"
+          },
+          {
+            "Debut": "11h30",
+            "Fin": "12h00"
+          },
+          {
+            "Debut": "12h00",
+            "Fin": "12h30"
+          },
+          {
+            "Debut": "12h30",
+            "Fin": "13h00"
+          },
+          {
+            "Debut": "13h00",
+            "Fin": "13h30"
+          },
+          {
+            "Debut": "13h30",
+            "Fin": "14h00"
+          },
+          {
+            "Debut": "14h00",
+            "Fin": "14h30"
+          },
+          {
+            "Debut": "14h30",
+            "Fin": "15h00"
+          },
+          {
+            "Debut": "15h00",
+            "Fin": "15h30"
+          },
+          {
+            "Debut": "15h30",
+            "Fin": "16h00"
+          },
+          {
+            "Debut": "16h00",
+            "Fin": "16h30"
+          },
+          {
+            "Debut": "16h30",
+            "Fin": "17h00"
+          },
+          {
+            "Debut": "17h00",
+            "Fin": "17h30"
+          },
+          {
+            "Debut": "17h30",
+            "Fin": "18h00"
+          },
+          {
+            "Debut": "18h00"
+          }
+        ],
+        "ListeSequences": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ]
+      },
+      "AutoriserAffichagePhoto": true,
+      "numeroPremiereSemaine": -2147483648,
+      "formatDureeEnChaine": 0,
+      "avecHeureFinPlaceCours": false,
+      "PlaceDebutGrille": 0,
+      "PlaceFinGrille": 20,
+      "AfficherLesJoursVerticalementEDT": true,
+      "ListeCalendriers": [
+        {
+          "L": "Art",
+          "N": "5#iW8fvXS52Nxg8loTYVeTTNHUIVInqWrGR8L3gh-zFKw",
+          "ListePeriodes": [
+            {
+              "L": "Semestre 1",
+              "N": "36#kv3JjKMfXmjuprJFzDkgmtESJTyrAPbJg_aHeTvqU2A",
+              "Domaine": {
+                "_T": 8,
+                "V": "[3..8,11..15]"
+              }
+            },
+            {
+              "L": "Semestre 2",
+              "N": "36#PbnJNVXShcj9QYEqsF-aZSrkqYCXet7rGPPxMnrUlSo",
+              "Domaine": {
+                "_T": 8,
+                "V": "[20..24,27..33,36..41]"
+              }
+            },
+            {
+              "L": "Année complète",
+              "N": "36#ins6RyGPJBgH2g8he8bWJJbaxxCkWRb6t3atyunDt48",
+              "Domaine": {
+                "_T": 8,
+                "V": "[3..8,11..15,20..24,27..33,36..41]"
+              }
+            }
+          ]
+        },
+        {
+          "L": "NDRC",
+          "N": "5#B7VrSzxbzKiv4PZ8fu-1qTZ4--9-_I8glqi-LM44Q6I",
+          "ListePeriodes": [
+            {
+              "L": "Semestre 1",
+              "N": "36#aPWyCVoODydKsbCYKcxFLBflckB5LEJ8BT1RNS1OWAA",
+              "Domaine": {
+                "_T": 8,
+                "V": "[1..5,7..14,16]"
+              }
+            },
+            {
+              "L": "Semestre 2",
+              "N": "36#um5eqK7I92PMjbLsMcz2vCP6T7sZTDe6HCKyhbJy22o",
+              "Domaine": {
+                "_T": 8,
+                "V": "[22..23,25..29,31..33,35..43]"
+              }
+            },
+            {
+              "L": "Stage",
+              "N": "36#8_lysSweYhwNkeesJ4xd8efHPvSKS_h8bQuuq7Ziqsk",
+              "Domaine": {
+                "_T": 8,
+                "V": "[6,15,24,30]"
+              }
+            },
+            {
+              "L": "Alternance",
+              "N": "36#UtWmrms8Buk9yNEqd7fe2bELWwTGJ31UM5VJrjeKWbU",
+              "Domaine": {
+                "_T": 8,
+                "V": "[2..5,7..14,17..23,25..29,31..33,35..42,44..50]"
+              }
+            },
+            {
+              "L": "BTS BLANC",
+              "N": "36#RXlyLhmg7c5fcMbpVFcUsmQ3fKKphjrLTy3ew6G_YqA",
+              "Domaine": {
+                "_T": 8,
+                "V": "[34]"
+              }
+            }
+          ]
+        }
+      ],
+      "listeMotifsAnnulation": {
+        "_T": 24,
+        "V": [
+          {
+            "L": "Annulation",
+            "N": "29#h8ncElN0m9tYTOkGjvoonzpv8qcDgsrNLczbSoQY-yI",
+            "defaut": true
+          }
+        ]
+      }
+    },
+    "nom": "DemandeParametreUtilisateur",
+    "Signature": {
+      "Erreur": true
+    }
+  }
+}

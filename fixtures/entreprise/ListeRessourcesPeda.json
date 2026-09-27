@@ -1,0 +1,13 @@
+{
+  "id": "ListeRessourcesPeda",
+  "session": 1996744,
+  "no": "51D6E075F2AF4DAC38852DED36F1E259",
+  "dataSec": {
+    "data": {},
+    "nom": "ListeRessourcesPeda",
+    "Signature": {
+      "Erreur": true,
+      "MessageErreur": "Vos droits sont insuffisants pour effectuer cette opération."
+    }
+  }
+}

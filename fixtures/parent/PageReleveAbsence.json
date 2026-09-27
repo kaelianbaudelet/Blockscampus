@@ -1,0 +1,13 @@
+{
+  "id": "PageReleveAbsence",
+  "session": 7241368,
+  "no": "D4AAEBB92C7889C89981310AAA85DA08",
+  "dataSec": {
+    "data": {},
+    "nom": "PageReleveAbsence",
+    "Signature": {
+      "Erreur": true,
+      "MessageErreur": "Vos droits sont insuffisants pour effectuer cette opération."
+    }
+  }
+}

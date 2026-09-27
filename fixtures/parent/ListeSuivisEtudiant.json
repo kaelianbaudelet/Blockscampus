@@ -1,0 +1,174 @@
+{
+  "id": "ListeSuivisEtudiant",
+  "session": 7241368,
+  "no": "AF9324902921FD71649C0F46CD4112D2",
+  "dataSec": {
+    "data": {
+      "listeSuivis": {
+        "_T": 24,
+        "V": [
+          {
+            "L": "Julien est tombé dans les escaliers. Intervention des pompiers. Légère comm",
+            "N": "59#4vRrLAEsxXJAIYWm89zHS6YLLb68_jmkCbIG16bGMR8",
+            "date": {
+              "_T": 7,
+              "V": "21/11/2023"
+            },
+            "avecHeure": false,
+            "auteur": {
+              "_T": 24,
+              "V": {
+                "L": "Superviseur",
+                "N": "9#CvtDt9-CI9nPXYzJchgcxxlIL1YKJdr2mldvhOVsKZk",
+                "G": 6
+              }
+            },
+            "categorie": {
+              "_T": 24,
+              "V": {
+                "L": "Administratif",
+                "N": "85#xLT9TlPJkqL46_Byvtfd3c7FzFotrdbSj7s4umEftTw",
+                "couleur": "#4169E1"
+              }
+            },
+            "listePiecesJointes": {
+              "_T": 24,
+              "V": [
+                {
+                  "L": "RAPPORT INTERVENTION POMPIERS.pdf",
+                  "N": "13#C-UfnRrkDCZC6M3E3SMpgpVtArP_c-dMw3I-U6xZBpQ"
+                }
+              ]
+            },
+            "genresDestinataires": {
+              "_T": 26,
+              "V": "[2]"
+            },
+            "nbrActionsSuivi": 1,
+            "avecEdition": false
+          },
+          {
+            "L": "Visite entreprise",
+            "N": "59#jZRWlYYG_F1KUl_f6g4Udn2LRNo5qqwlVtXovL8a28I",
+            "date": {
+              "_T": 7,
+              "V": "12/09/2022"
+            },
+            "avecHeure": false,
+            "auteur": {
+              "_T": 24,
+              "V": {
+                "L": "Superviseur",
+                "N": "9#CvtDt9-CI9nPXYzJchgcxxlIL1YKJdr2mldvhOVsKZk",
+                "G": 6
+              }
+            },
+            "stage": {
+              "_T": 24,
+              "V": {
+                "L": "du 09/09/26 au 18/06/27 - Animation du réseau",
+                "N": "57#TDA2sHi_PyBJG2UcOvnfXqJu0g0ETs08T3Qetz-A0Pg"
+              }
+            },
+            "categorie": {
+              "_T": 24,
+              "V": {
+                "L": "En entreprise",
+                "N": "85#eJK9QXRW2rrWiBIepD1QdxcLYqpzeGDSxNKQ4JLXm98",
+                "couleur": "#9ACD32"
+              }
+            },
+            "listePiecesJointes": {
+              "_T": 24,
+              "V": []
+            },
+            "genresDestinataires": {
+              "_T": 26,
+              "V": "[1,2,4]"
+            },
+            "nbrActionsSuivi": 1,
+            "avecEdition": false
+          },
+          {
+            "L": "Appel téléphonique - En entreprise",
+            "N": "59#aJU35v0uXFaNF_ujmY9voAMZiIccvA6o2J5Z94Mm2l4",
+            "date": {
+              "_T": 7,
+              "V": "09/01/2023"
+            },
+            "avecHeure": false,
+            "auteur": {
+              "_T": 24,
+              "V": {
+                "L": "Superviseur",
+                "N": "9#CvtDt9-CI9nPXYzJchgcxxlIL1YKJdr2mldvhOVsKZk",
+                "G": 6
+              }
+            },
+            "stage": {
+              "_T": 24,
+              "V": {
+                "L": "du 09/09/26 au 18/06/27 - Animation du réseau",
+                "N": "57#TDA2sHi_PyBJG2UcOvnfXqJu0g0ETs08T3Qetz-A0Pg"
+              }
+            },
+            "categorie": {
+              "_T": 24,
+              "V": {
+                "L": "En entreprise",
+                "N": "85#eJK9QXRW2rrWiBIepD1QdxcLYqpzeGDSxNKQ4JLXm98",
+                "couleur": "#9ACD32"
+              }
+            },
+            "listePiecesJointes": {
+              "_T": 24,
+              "V": []
+            },
+            "genresDestinataires": {
+              "_T": 26,
+              "V": "[1,2,4]"
+            },
+            "nbrActionsSuivi": 1,
+            "avecEdition": false
+          }
+        ]
+      },
+      "avecDroitCreerSuivi": true,
+      "listeStagesEtudiant": {
+        "_T": 24,
+        "V": [
+          {
+            "L": "du 09/09/26 au 18/06/27 - Animation du réseau",
+            "N": "57#TDA2sHi_PyBJG2UcOvnfXqJu0g0ETs08T3Qetz-A0Pg"
+          }
+        ]
+      },
+      "listeCategoriesSuivi": {
+        "_T": 24,
+        "V": [
+          {
+            "L": "Administratif",
+            "N": "85#xLT9TlPJkqL46_Byvtfd3c7FzFotrdbSj7s4umEftTw",
+            "estParDefaut": true,
+            "couleur": "#4169E1"
+          },
+          {
+            "L": "En entreprise",
+            "N": "85#eJK9QXRW2rrWiBIepD1QdxcLYqpzeGDSxNKQ4JLXm98",
+            "couleur": "#9ACD32"
+          },
+          {
+            "L": "Scolarité",
+            "N": "85#YyaiC1kjPls3OeSGmoc5ZB03p20meOf8qCwSDx3HyR0",
+            "couleur": "#FF8C00"
+          }
+        ]
+      },
+      "listePartagePossible": {
+        "_T": 26,
+        "V": "[0..4]"
+      }
+    },
+    "nom": "ListeSuivisEtudiant"
+  }
+}

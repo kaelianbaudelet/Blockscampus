@@ -1,0 +1,13 @@
+{
+  "id": "RecupererDossiersStage",
+  "session": 6850553,
+  "no": "CE932C8B870A79895C950E4D1C57C6F9",
+  "dataSec": {
+    "data": {},
+    "nom": "RecupererDossiersStage",
+    "Signature": {
+      "Erreur": true,
+      "MessageErreur": "Vos droits sont insuffisants pour effectuer cette opération."
+    }
+  }
+}

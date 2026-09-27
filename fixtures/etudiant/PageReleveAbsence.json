@@ -1,0 +1,983 @@
+{
+  "id": "PageReleveAbsence",
+  "session": 5019806,
+  "no": "5D7598423DAA8B5ED37AD923C3C7CFD8",
+  "dataSec": {
+    "data": {
+      "listeMotifsAbsences": {
+        "_T": 24,
+        "V": [
+          {
+            "L": "Maladie avec certificat",
+            "N": "28#AH7fAAFShUcBlnHtYCsZPJNSKlJyHVHXez9JvUb71ss"
+          },
+          {
+            "L": "Problème de transport",
+            "N": "28#ZHCMg4TrVbFI9jSSl4DB3Lbt6LBbMPvDNd9bHRN29GI"
+          },
+          {
+            "L": "Raison familiale",
+            "N": "28#jlz0m8O3CL8Ddd_ImhdTOlf3rFAsHTBhk3cqnxqHqPY"
+          },
+          {
+            "L": "RDV administratif",
+            "N": "28#p2uz-J1ZZCF3dHdXgKPKitSrIXHAhRk04J5FlgE1Fz0"
+          },
+          {
+            "L": "RDV médical extérieur",
+            "N": "28#1yDXYXcTB4hd3qAlKchz8OXM1pZO5yCcZYsLS9RjeJE"
+          }
+        ]
+      },
+      "avecDeclarationNouvelleAbsence": true,
+      "avecJustificationAbsence": true,
+      "nbMaxJoursDeclarationAbsence": 30,
+      "listeMotifsRetards": {
+        "_T": 24,
+        "V": [
+          {
+            "L": "Problème de transport",
+            "N": "28#ZHCMg4TrVbFI9jSSl4DB3Lbt6LBbMPvDNd9bHRN29GI"
+          },
+          {
+            "L": "Raison familiale",
+            "N": "28#jlz0m8O3CL8Ddd_ImhdTOlf3rFAsHTBhk3cqnxqHqPY"
+          },
+          {
+            "L": "RDV administratif",
+            "N": "28#p2uz-J1ZZCF3dHdXgKPKitSrIXHAhRk04J5FlgE1Fz0"
+          },
+          {
+            "L": "RDV médical extérieur",
+            "N": "28#1yDXYXcTB4hd3qAlKchz8OXM1pZO5yCcZYsLS9RjeJE"
+          }
+        ]
+      },
+      "avecJustificationRetard": true,
+      "ListeAbsences": [
+        {
+          "N": "1#TMnWr0xMwC6WEHBVu2dHl4oDnNawaG4i12pxQex4GF0",
+          "G": 26,
+          "SD": 1,
+          "PD": 60,
+          "SF": 1,
+          "PF": 69,
+          "R": true,
+          "estRegleAdministrativement": true,
+          "estUneCreationParentModifiable": false,
+          "details": {
+            "estUneCreationParent": false,
+            "justification": "",
+            "motifParent": {
+              "_T": 24,
+              "V": {
+                "N": "0"
+              }
+            },
+            "documents": {
+              "_T": 24,
+              "V": []
+            }
+          },
+          "ListeMatieres": [
+            {
+              "L": "ATELIER PROFESSIONNEL",
+              "enDuree": {
+                "DACours": 0,
+                "DACoursP": 0.166666666666667,
+                "DAJCoursP": 0,
+                "DAICoursP": 0.166666666666667,
+                "DCoursPrevusP": 1.66666666666667
+              },
+              "enNombre": {
+                "DACours": 0,
+                "DACoursP": 2,
+                "DAJCoursP": 0,
+                "DAICoursP": 2,
+                "DCoursPrevusP": 20
+              },
+              "promotion": {
+                "_T": 24,
+                "V": {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+                  "G": 2
+                }
+              }
+            },
+            {
+              "L": "C.E.J.M.",
+              "enDuree": {
+                "DACours": 0.166666666666667,
+                "DACoursP": 0.25,
+                "DAJCoursP": 0.166666666666667,
+                "DAICoursP": 0.0833333333333333,
+                "DCoursPrevusP": 5.58333333333333
+              },
+              "enNombre": {
+                "DACours": 2,
+                "DACoursP": 3,
+                "DAJCoursP": 2,
+                "DAICoursP": 1,
+                "DCoursPrevusP": 67
+              },
+              "promotion": {
+                "_T": 24,
+                "V": {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+                  "G": 2
+                }
+              }
+            },
+            {
+              "L": "RELATION CLIENT",
+              "enDuree": {
+                "DACours": 0,
+                "DACoursP": 0.0833333333333333,
+                "DAJCoursP": 0,
+                "DAICoursP": 0.0833333333333333,
+                "DCoursPrevusP": 3.66666666666667
+              },
+              "enNombre": {
+                "DACours": 0,
+                "DACoursP": 1,
+                "DAJCoursP": 0,
+                "DAICoursP": 1,
+                "DCoursPrevusP": 44
+              },
+              "promotion": {
+                "_T": 24,
+                "V": {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+                  "G": 2
+                }
+              }
+            },
+            {
+              "L": "RELATION CLIENT ET ANIMATION",
+              "enDuree": {
+                "DACours": 0,
+                "DACoursP": 0.0833333333333333,
+                "DAJCoursP": 0,
+                "DAICoursP": 0.0833333333333333,
+                "DCoursPrevusP": 3.08333333333333
+              },
+              "enNombre": {
+                "DACours": 0,
+                "DACoursP": 1,
+                "DAJCoursP": 0,
+                "DAICoursP": 1,
+                "DCoursPrevusP": 37
+              },
+              "promotion": {
+                "_T": 24,
+                "V": {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+                  "G": 2
+                }
+              }
+            }
+          ],
+          "MotifAbsence": {
+            "L": "Maladie sans certificat",
+            "N": "28#XyYzeiVx1HxWBTRZC9D-yaPIc0sCiQ3TSlqLGjcQtQY",
+            "Couleur": "#008000",
+            "EstJustifie": true,
+            "EstParDefaut": false,
+            "Statut": "J"
+          }
+        },
+        {
+          "N": "1#gZvBUblmiV22aOKWeCLYIxOr4fWX5nkY_iy2vt1I22M",
+          "G": 26,
+          "SD": 2,
+          "PD": 20,
+          "SF": 2,
+          "PF": 28,
+          "R": false,
+          "estRegleAdministrativement": false,
+          "estUneCreationParentModifiable": false,
+          "details": {
+            "estUneCreationParent": false,
+            "justification": "",
+            "motifParent": {
+              "_T": 24,
+              "V": {
+                "N": "0"
+              }
+            },
+            "documents": {
+              "_T": 24,
+              "V": []
+            }
+          },
+          "ListeMatieres": [
+            {
+              "L": "ATELIER PROFESSIONNEL",
+              "enDuree": {
+                "DACours": 0,
+                "DACoursP": 0.166666666666667,
+                "DAJCoursP": 0,
+                "DAICoursP": 0.166666666666667,
+                "DCoursPrevusP": 1.66666666666667
+              },
+              "enNombre": {
+                "DACours": 0,
+                "DACoursP": 2,
+                "DAJCoursP": 0,
+                "DAICoursP": 2,
+                "DCoursPrevusP": 20
+              },
+              "promotion": {
+                "_T": 24,
+                "V": {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+                  "G": 2
+                }
+              }
+            },
+            {
+              "L": "C.E.J.M.",
+              "enDuree": {
+                "DACours": 0.0833333333333333,
+                "DACoursP": 0.25,
+                "DAJCoursP": 0.166666666666667,
+                "DAICoursP": 0.0833333333333333,
+                "DCoursPrevusP": 5.58333333333333
+              },
+              "enNombre": {
+                "DACours": 1,
+                "DACoursP": 3,
+                "DAJCoursP": 2,
+                "DAICoursP": 1,
+                "DCoursPrevusP": 67
+              },
+              "promotion": {
+                "_T": 24,
+                "V": {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+                  "G": 2
+                }
+              }
+            },
+            {
+              "L": "RELATION CLIENT",
+              "enDuree": {
+                "DACours": 0,
+                "DACoursP": 0.0833333333333333,
+                "DAJCoursP": 0,
+                "DAICoursP": 0.0833333333333333,
+                "DCoursPrevusP": 3.66666666666667
+              },
+              "enNombre": {
+                "DACours": 0,
+                "DACoursP": 1,
+                "DAJCoursP": 0,
+                "DAICoursP": 1,
+                "DCoursPrevusP": 44
+              },
+              "promotion": {
+                "_T": 24,
+                "V": {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+                  "G": 2
+                }
+              }
+            },
+            {
+              "L": "RELATION CLIENT ET ANIMATION",
+              "enDuree": {
+                "DACours": 0.0833333333333333,
+                "DACoursP": 0.0833333333333333,
+                "DAJCoursP": 0,
+                "DAICoursP": 0.0833333333333333,
+                "DCoursPrevusP": 3.08333333333333
+              },
+              "enNombre": {
+                "DACours": 1,
+                "DACoursP": 1,
+                "DAJCoursP": 0,
+                "DAICoursP": 1,
+                "DCoursPrevusP": 37
+              },
+              "promotion": {
+                "_T": 24,
+                "V": {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+                  "G": 2
+                }
+              }
+            }
+          ],
+          "MotifAbsence": {
+            "L": "Motif non encore connu",
+            "N": "28#DJlMfx0z-4yv18z9s480GmvFH_ANGw12hT5cA_Cw_go",
+            "Couleur": "#C0C0C0",
+            "EstJustifie": false,
+            "EstParDefaut": true,
+            "Statut": "I"
+          }
+        },
+        {
+          "N": "1#FCeZ-HwDw5XKjV-t_sUDORvKDSSJ9uB2jmldKvn61uI",
+          "G": 26,
+          "SD": 3,
+          "PD": 0,
+          "SF": 3,
+          "PF": 9,
+          "R": false,
+          "estRegleAdministrativement": false,
+          "estUneCreationParentModifiable": false,
+          "details": {
+            "estUneCreationParent": false,
+            "justification": "",
+            "motifParent": {
+              "_T": 24,
+              "V": {
+                "N": "0"
+              }
+            },
+            "documents": {
+              "_T": 24,
+              "V": []
+            }
+          },
+          "ListeMatieres": [
+            {
+              "L": "ATELIER PROFESSIONNEL",
+              "enDuree": {
+                "DACours": 0.0833333333333333,
+                "DACoursP": 0.166666666666667,
+                "DAJCoursP": 0,
+                "DAICoursP": 0.166666666666667,
+                "DCoursPrevusP": 1.66666666666667
+              },
+              "enNombre": {
+                "DACours": 1,
+                "DACoursP": 2,
+                "DAJCoursP": 0,
+                "DAICoursP": 2,
+                "DCoursPrevusP": 20
+              },
+              "promotion": {
+                "_T": 24,
+                "V": {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+                  "G": 2
+                }
+              }
+            },
+            {
+              "L": "C.E.J.M.",
+              "enDuree": {
+                "DACours": 0,
+                "DACoursP": 0.25,
+                "DAJCoursP": 0.166666666666667,
+                "DAICoursP": 0.0833333333333333,
+                "DCoursPrevusP": 5.58333333333333
+              },
+              "enNombre": {
+                "DACours": 0,
+                "DACoursP": 3,
+                "DAJCoursP": 2,
+                "DAICoursP": 1,
+                "DCoursPrevusP": 67
+              },
+              "promotion": {
+                "_T": 24,
+                "V": {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+                  "G": 2
+                }
+              }
+            },
+            {
+              "L": "RELATION CLIENT",
+              "enDuree": {
+                "DACours": 0,
+                "DACoursP": 0.0833333333333333,
+                "DAJCoursP": 0,
+                "DAICoursP": 0.0833333333333333,
+                "DCoursPrevusP": 3.66666666666667
+              },
+              "enNombre": {
+                "DACours": 0,
+                "DACoursP": 1,
+                "DAJCoursP": 0,
+                "DAICoursP": 1,
+                "DCoursPrevusP": 44
+              },
+              "promotion": {
+                "_T": 24,
+                "V": {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+                  "G": 2
+                }
+              }
+            },
+            {
+              "L": "RELATION CLIENT ET ANIMATION",
+              "enDuree": {
+                "DACours": 0,
+                "DACoursP": 0.0833333333333333,
+                "DAJCoursP": 0,
+                "DAICoursP": 0.0833333333333333,
+                "DCoursPrevusP": 3.08333333333333
+              },
+              "enNombre": {
+                "DACours": 0,
+                "DACoursP": 1,
+                "DAJCoursP": 0,
+                "DAICoursP": 1,
+                "DCoursPrevusP": 37
+              },
+              "promotion": {
+                "_T": 24,
+                "V": {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+                  "G": 2
+                }
+              }
+            }
+          ],
+          "MotifAbsence": {
+            "L": "Motif non encore connu",
+            "N": "28#DJlMfx0z-4yv18z9s480GmvFH_ANGw12hT5cA_Cw_go",
+            "Couleur": "#C0C0C0",
+            "EstJustifie": false,
+            "EstParDefaut": true,
+            "Statut": "I"
+          }
+        },
+        {
+          "N": "1#8Ui7kyE4AKC5dTE0ibsZn0rY_dq7h_DxtYYwC8HcDA4",
+          "G": 26,
+          "SD": 23,
+          "PD": 0,
+          "SF": 23,
+          "PF": 9,
+          "R": false,
+          "estRegleAdministrativement": false,
+          "estUneCreationParentModifiable": false,
+          "details": {
+            "estUneCreationParent": false,
+            "justification": "",
+            "motifParent": {
+              "_T": 24,
+              "V": {
+                "N": "0"
+              }
+            },
+            "documents": {
+              "_T": 24,
+              "V": []
+            }
+          },
+          "ListeMatieres": [
+            {
+              "L": "ATELIER PROFESSIONNEL",
+              "enDuree": {
+                "DACours": 0.0833333333333333,
+                "DACoursP": 0.166666666666667,
+                "DAJCoursP": 0,
+                "DAICoursP": 0.166666666666667,
+                "DCoursPrevusP": 1.66666666666667
+              },
+              "enNombre": {
+                "DACours": 1,
+                "DACoursP": 2,
+                "DAJCoursP": 0,
+                "DAICoursP": 2,
+                "DCoursPrevusP": 20
+              },
+              "promotion": {
+                "_T": 24,
+                "V": {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+                  "G": 2
+                }
+              }
+            },
+            {
+              "L": "C.E.J.M.",
+              "enDuree": {
+                "DACours": 0,
+                "DACoursP": 0.25,
+                "DAJCoursP": 0.166666666666667,
+                "DAICoursP": 0.0833333333333333,
+                "DCoursPrevusP": 5.58333333333333
+              },
+              "enNombre": {
+                "DACours": 0,
+                "DACoursP": 3,
+                "DAJCoursP": 2,
+                "DAICoursP": 1,
+                "DCoursPrevusP": 67
+              },
+              "promotion": {
+                "_T": 24,
+                "V": {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+                  "G": 2
+                }
+              }
+            },
+            {
+              "L": "RELATION CLIENT",
+              "enDuree": {
+                "DACours": 0.0833333333333333,
+                "DACoursP": 0.0833333333333333,
+                "DAJCoursP": 0,
+                "DAICoursP": 0.0833333333333333,
+                "DCoursPrevusP": 3.66666666666667
+              },
+              "enNombre": {
+                "DACours": 1,
+                "DACoursP": 1,
+                "DAJCoursP": 0,
+                "DAICoursP": 1,
+                "DCoursPrevusP": 44
+              },
+              "promotion": {
+                "_T": 24,
+                "V": {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+                  "G": 2
+                }
+              }
+            },
+            {
+              "L": "RELATION CLIENT ET ANIMATION",
+              "enDuree": {
+                "DACours": 0,
+                "DACoursP": 0.0833333333333333,
+                "DAJCoursP": 0,
+                "DAICoursP": 0.0833333333333333,
+                "DCoursPrevusP": 3.08333333333333
+              },
+              "enNombre": {
+                "DACours": 0,
+                "DACoursP": 1,
+                "DAJCoursP": 0,
+                "DAICoursP": 1,
+                "DCoursPrevusP": 37
+              },
+              "promotion": {
+                "_T": 24,
+                "V": {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+                  "G": 2
+                }
+              }
+            }
+          ],
+          "MotifAbsence": {
+            "L": "Motif non encore connu",
+            "N": "28#DJlMfx0z-4yv18z9s480GmvFH_ANGw12hT5cA_Cw_go",
+            "Couleur": "#C0C0C0",
+            "EstJustifie": false,
+            "EstParDefaut": true,
+            "Statut": "I"
+          }
+        }
+      ],
+      "listeRetards": {
+        "_T": 24,
+        "V": [
+          {
+            "N": "51#Wve6G8-54hZYbnMxHvgNhjoiBE03VJrhSeqawH7lpfo",
+            "G": 27,
+            "date": {
+              "_T": 7,
+              "V": "03/11/2026 13:30:00"
+            },
+            "duree": 0.00347222222222222,
+            "estElementVSJustifie": false,
+            "estRegleAdministrativement": false,
+            "motifRetard": {
+              "_T": 24,
+              "V": {
+                "L": "Motif non encore connu",
+                "N": "28#DJlMfx0z-4yv18z9s480GmvFH_ANGw12hT5cA_Cw_go",
+                "Couleur": "#C0C0C0",
+                "EstJustifie": false,
+                "EstParDefaut": true,
+                "Statut": "I"
+              }
+            },
+            "details": {
+              "estUneCreationParent": false,
+              "justification": "",
+              "motifParent": {
+                "_T": 24,
+                "V": {
+                  "N": "0"
+                }
+              }
+            }
+          },
+          {
+            "N": "51#-DeBNsiDAKOuLDMq3pHJ9Z9Dy-oREC5bM1cTs8f4rAU",
+            "G": 27,
+            "date": {
+              "_T": 7,
+              "V": "16/11/2026 13:30:00"
+            },
+            "duree": 0.00347222222222222,
+            "estElementVSJustifie": false,
+            "estRegleAdministrativement": false,
+            "motifRetard": {
+              "_T": 24,
+              "V": {
+                "L": "Motif non encore connu",
+                "N": "28#DJlMfx0z-4yv18z9s480GmvFH_ANGw12hT5cA_Cw_go",
+                "Couleur": "#C0C0C0",
+                "EstJustifie": false,
+                "EstParDefaut": true,
+                "Statut": "I"
+              }
+            },
+            "details": {
+              "estUneCreationParent": false,
+              "justification": "",
+              "motifParent": {
+                "_T": 24,
+                "V": {
+                  "N": "0"
+                }
+              }
+            },
+            "matiere": {
+              "_T": 24,
+              "V": {
+                "L": "RELATION CLIENT",
+                "N": "25#Hh7t4mDEby2TW-fGDiMT68O4Z-_6hsd5FAZD19Rou1Y"
+              }
+            }
+          },
+          {
+            "N": "51#g0BEvXPc3QedNN9_bBChuB1GXoy6usnhmnVCLPD4oJU",
+            "G": 27,
+            "date": {
+              "_T": 7,
+              "V": "08/09/2026 13:30:00"
+            },
+            "duree": 0.0104166666666667,
+            "estElementVSJustifie": false,
+            "estRegleAdministrativement": false,
+            "motifRetard": {
+              "_T": 24,
+              "V": {
+                "L": "Motif non encore connu",
+                "N": "28#DJlMfx0z-4yv18z9s480GmvFH_ANGw12hT5cA_Cw_go",
+                "Couleur": "#C0C0C0",
+                "EstJustifie": false,
+                "EstParDefaut": true,
+                "Statut": "I"
+              }
+            },
+            "details": {
+              "estUneCreationParent": false,
+              "justification": "",
+              "motifParent": {
+                "_T": 24,
+                "V": {
+                  "N": "0"
+                }
+              }
+            },
+            "matiere": {
+              "_T": 24,
+              "V": {
+                "L": "GESTION COMMERCIALE",
+                "N": "25#SHmWPb2D-NDn2O4FfQYh9foZBRD-6ydI0i3DPQKW5Qs"
+              }
+            }
+          },
+          {
+            "N": "51#boClWa-seOBDlD1eHeE4UX7mlfkyAFV0gzkkPiPPeCo",
+            "G": 27,
+            "date": {
+              "_T": 7,
+              "V": "27/10/2026 08:30:00"
+            },
+            "duree": 0.00347222222222222,
+            "estElementVSJustifie": false,
+            "estRegleAdministrativement": false,
+            "motifRetard": {
+              "_T": 24,
+              "V": {
+                "L": "Motif non encore connu",
+                "N": "28#DJlMfx0z-4yv18z9s480GmvFH_ANGw12hT5cA_Cw_go",
+                "Couleur": "#C0C0C0",
+                "EstJustifie": false,
+                "EstParDefaut": true,
+                "Statut": "I"
+              }
+            },
+            "details": {
+              "estUneCreationParent": false,
+              "justification": "",
+              "motifParent": {
+                "_T": 24,
+                "V": {
+                  "N": "0"
+                }
+              }
+            },
+            "matiere": {
+              "_T": 24,
+              "V": {
+                "L": "C.E.J.M.",
+                "N": "25#t1XDdba_o0Sm9w_Qlhgm2sPI2bdWRfr9jJYglejiESM"
+              }
+            }
+          },
+          {
+            "N": "51#ZYb6SaBmc__g-J4vkPNwY3mulE61ljYHXveeQxsG-1I",
+            "G": 27,
+            "date": {
+              "_T": 7,
+              "V": "01/02/2027 13:30:00"
+            },
+            "duree": 0.00347222222222222,
+            "estElementVSJustifie": false,
+            "estRegleAdministrativement": false,
+            "motifRetard": {
+              "_T": 24,
+              "V": {
+                "L": "Motif non encore connu",
+                "N": "28#DJlMfx0z-4yv18z9s480GmvFH_ANGw12hT5cA_Cw_go",
+                "Couleur": "#C0C0C0",
+                "EstJustifie": false,
+                "EstParDefaut": true,
+                "Statut": "I"
+              }
+            },
+            "details": {
+              "estUneCreationParent": false,
+              "justification": "",
+              "motifParent": {
+                "_T": 24,
+                "V": {
+                  "N": "0"
+                }
+              }
+            },
+            "matiere": {
+              "_T": 24,
+              "V": {
+                "L": "C.G.E.",
+                "N": "25#YNlX47mvLBLQhTBKfSlAgIo7Eg1AnSZiVYk5lpR22Sc"
+              }
+            }
+          },
+          {
+            "N": "51#Z1etbuQCELE7RSV7490uh5A0qkF5KrvBnfLhBR5FaWc",
+            "G": 27,
+            "date": {
+              "_T": 7,
+              "V": "02/02/2027 13:30:00"
+            },
+            "duree": 0.00347222222222222,
+            "estElementVSJustifie": false,
+            "estRegleAdministrativement": false,
+            "motifRetard": {
+              "_T": 24,
+              "V": {
+                "L": "Motif non encore connu",
+                "N": "28#DJlMfx0z-4yv18z9s480GmvFH_ANGw12hT5cA_Cw_go",
+                "Couleur": "#C0C0C0",
+                "EstJustifie": false,
+                "EstParDefaut": true,
+                "Statut": "I"
+              }
+            },
+            "details": {
+              "estUneCreationParent": false,
+              "justification": "",
+              "motifParent": {
+                "_T": 24,
+                "V": {
+                  "N": "0"
+                }
+              }
+            }
+          },
+          {
+            "N": "51#c9GaleXDbrQISlxyhwSEYmLvUkk5CEt0kau7taVVGjY",
+            "G": 27,
+            "date": {
+              "_T": 7,
+              "V": "24/02/2027 11:00:00"
+            },
+            "duree": 0.00347222222222222,
+            "estElementVSJustifie": false,
+            "estRegleAdministrativement": false,
+            "motifRetard": {
+              "_T": 24,
+              "V": {
+                "L": "Motif non encore connu",
+                "N": "28#DJlMfx0z-4yv18z9s480GmvFH_ANGw12hT5cA_Cw_go",
+                "Couleur": "#C0C0C0",
+                "EstJustifie": false,
+                "EstParDefaut": true,
+                "Statut": "I"
+              }
+            },
+            "details": {
+              "estUneCreationParent": false,
+              "justification": "",
+              "motifParent": {
+                "_T": 24,
+                "V": {
+                  "N": "0"
+                }
+              }
+            },
+            "matiere": {
+              "_T": 24,
+              "V": {
+                "L": "MARKETING RESEAU",
+                "N": "25#C4KbuE4VmPkp6aJdaxkWsakdFV6WWgwVnM_D8wgVA3I"
+              }
+            }
+          },
+          {
+            "N": "51#eF-V-xB17aVTAVTZ-v7cbYs5Zb-iz_BZ3m_tkKnldrw",
+            "G": 27,
+            "date": {
+              "_T": 7,
+              "V": "05/04/2027 10:30:00"
+            },
+            "duree": 0.00347222222222222,
+            "estElementVSJustifie": false,
+            "estRegleAdministrativement": false,
+            "motifRetard": {
+              "_T": 24,
+              "V": {
+                "L": "Motif non encore connu",
+                "N": "28#DJlMfx0z-4yv18z9s480GmvFH_ANGw12hT5cA_Cw_go",
+                "Couleur": "#C0C0C0",
+                "EstJustifie": false,
+                "EstParDefaut": true,
+                "Statut": "I"
+              }
+            },
+            "details": {
+              "estUneCreationParent": false,
+              "justification": "",
+              "motifParent": {
+                "_T": 24,
+                "V": {
+                  "N": "0"
+                }
+              }
+            },
+            "matiere": {
+              "_T": 24,
+              "V": {
+                "L": "ATELIER PROFESSIONNEL",
+                "N": "25#xF8Eto0nSvGgoj-FSo_PXOfLvQ_-9xMLHYT_PxSgzIc"
+              }
+            }
+          },
+          {
+            "N": "51#Hv5oPuqBWqNi8uNeKHoe1zFyJUJhri3B0jVdTvQF5Nc",
+            "G": 27,
+            "date": {
+              "_T": 7,
+              "V": "03/05/2027 13:30:00"
+            },
+            "duree": 0.00347222222222222,
+            "estElementVSJustifie": false,
+            "estRegleAdministrativement": false,
+            "motifRetard": {
+              "_T": 24,
+              "V": {
+                "L": "Motif non encore connu",
+                "N": "28#DJlMfx0z-4yv18z9s480GmvFH_ANGw12hT5cA_Cw_go",
+                "Couleur": "#C0C0C0",
+                "EstJustifie": false,
+                "EstParDefaut": true,
+                "Statut": "I"
+              }
+            },
+            "details": {
+              "estUneCreationParent": false,
+              "justification": "",
+              "motifParent": {
+                "_T": 24,
+                "V": {
+                  "N": "0"
+                }
+              }
+            },
+            "matiere": {
+              "_T": 24,
+              "V": {
+                "L": "C.G.E.",
+                "N": "25#YNlX47mvLBLQhTBKfSlAgIo7Eg1AnSZiVYk5lpR22Sc"
+              }
+            }
+          },
+          {
+            "N": "51#TC21q-RNMNGFWvXIa82L-mu8TDn18j2WdEM3i_sQVYU",
+            "G": 27,
+            "date": {
+              "_T": 7,
+              "V": "31/05/2027 13:30:00"
+            },
+            "duree": 0.00347222222222222,
+            "estElementVSJustifie": false,
+            "estRegleAdministrativement": false,
+            "motifRetard": {
+              "_T": 24,
+              "V": {
+                "L": "Motif non encore connu",
+                "N": "28#DJlMfx0z-4yv18z9s480GmvFH_ANGw12hT5cA_Cw_go",
+                "Couleur": "#C0C0C0",
+                "EstJustifie": false,
+                "EstParDefaut": true,
+                "Statut": "I"
+              }
+            },
+            "details": {
+              "estUneCreationParent": false,
+              "justification": "",
+              "motifParent": {
+                "_T": 24,
+                "V": {
+                  "N": "0"
+                }
+              }
+            },
+            "matiere": {
+              "_T": 24,
+              "V": {
+                "L": "C.G.E.",
+                "N": "25#YNlX47mvLBLQhTBKfSlAgIo7Eg1AnSZiVYk5lpR22Sc"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "nom": "PageReleveAbsence"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "PageScolarite",
+  "session": 7241368,
+  "no": "449614716430EF4288DF36F03AC48D3B",
+  "dataSec": {
+    "data": {
+      "Date": {
+        "_T": 7,
+        "V": "27/09/2026 14:47:45"
+      },
+      "listeRessourcesActuelles": {
+        "_T": 24,
+        "V": [
+          {
+            "L": "RELATION COMMERCE DIGITAL 1",
+            "N": "50#Vm_XKGODOkwUgJ9mnpm3f754eKY5ltSBpdcrVeHRGI8",
+            "G": 2
+          },
+          {
+            "L": "RELATION COMMERCE DIGITAL 1 > AUDIBERT Julien",
+            "N": "50#L4pr9VXFcqivVFPQpI6Iep6a9MWi7-Axg3hLdySljmg",
+            "G": 3
+          }
+        ]
+      },
+      "listeRessourcesHistoriques": {
+        "_T": 24,
+        "V": [
+          {
+            "L": "RELATION COMMERCE DIGITAL 1",
+            "N": "50#Vm_XKGODOkwUgJ9mnpm3f754eKY5ltSBpdcrVeHRGI8",
+            "G": 2,
+            "dates": [
+              {}
+            ]
+          },
+          {
+            "L": "RELATION COMMERCE DIGITAL 1 > AUDIBERT Julien",
+            "N": "50#L4pr9VXFcqivVFPQpI6Iep6a9MWi7-Axg3hLdySljmg",
+            "G": 3,
+            "dates": [
+              {}
+            ]
+          }
+        ]
+      }
+    },
+    "nom": "PageScolarite"
+  }
+}

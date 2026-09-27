@@ -1,0 +1,40 @@
+{
+  "id": "DocumentsATelecharger",
+  "session": 1996744,
+  "no": "E12B13A7286DFC197C49F3A4CE6F1718",
+  "dataSec": {
+    "data": {
+      "listeDocuments": {
+        "_T": 24,
+        "V": []
+      },
+      "listeDocumentsMembre": {
+        "_T": 24,
+        "V": []
+      },
+      "listeCategories": {
+        "_T": 24,
+        "V": [
+          {
+            "L": "Divers",
+            "N": "0",
+            "couleur": "#FFA500"
+          }
+        ]
+      },
+      "listeDocumentsSignatureElecASigner": {
+        "_T": 24,
+        "V": []
+      },
+      "listeRecapECTS": {
+        "_T": 24,
+        "V": []
+      },
+      "listeBulletins": {
+        "_T": 24,
+        "V": []
+      }
+    },
+    "nom": "DocumentsATelecharger"
+  }
+}

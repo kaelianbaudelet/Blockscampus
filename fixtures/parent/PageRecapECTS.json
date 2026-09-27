@@ -1,0 +1,13 @@
+{
+  "id": "PageRecapECTS",
+  "session": 7241368,
+  "no": "E9DF1AA70CA04B1795E67C42F29DB5B3",
+  "dataSec": {
+    "data": {},
+    "nom": "PageRecapECTS",
+    "Signature": {
+      "Erreur": true,
+      "MessageErreur": "Vos droits sont insuffisants pour effectuer cette opération."
+    }
+  }
+}

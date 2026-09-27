@@ -1,0 +1,259 @@
+{
+  "id": "DemandeParametreUtilisateur",
+  "session": 1996744,
+  "no": "C7C51730F7A40A86BF6B84ECC296B2D6",
+  "dataSec": {
+    "data": {
+      "listeOnglets": [
+        {
+          "G": "MONENTREPRISE",
+          "L": "Mon entreprise",
+          "listeOnglets": [
+            {
+              "G": "ENTREPRISE",
+              "L": "Coordonnées"
+            },
+            {
+              "G": "SAISIEOFFRESDESTAGE",
+              "L": "Offres proposées"
+            }
+          ]
+        },
+        {
+          "G": "STAGE",
+          "L": "Suivi étudiant",
+          "listeOnglets": [
+            {
+              "G": "SUIVIS",
+              "L": "Suivis"
+            },
+            {
+              "G": "FICHESTAGE",
+              "L": "Fiche de stage"
+            },
+            {
+              "G": "SAISIECOMPETENCES",
+              "L": "Évaluations des compétences"
+            },
+            {
+              "G": "RELEVEPERIODIQUECOMPETENCES",
+              "L": "Relevé de compétences"
+            }
+          ]
+        },
+        {
+          "G": "COURS",
+          "L": "Cours",
+          "listeOnglets": [
+            {
+              "G": "EDT",
+              "L": "Emploi du temps"
+            },
+            {
+              "G": "RECAPCOURS",
+              "L": "Récapitulatif des cours"
+            },
+            {
+              "G": "COURSANNULES",
+              "L": "Cours annulés"
+            }
+          ]
+        },
+        {
+          "G": "NOTATION",
+          "L": "Résultats",
+          "listeOnglets": [
+            {
+              "G": "DERNIERESNOTES",
+              "L": "Dernières notes"
+            },
+            {
+              "G": "RELEVENOTES",
+              "L": "Relevé de notes"
+            },
+            {
+              "G": "BULLETIN",
+              "L": "Bulletin"
+            }
+          ]
+        },
+        {
+          "G": "VIESCOLAIRE",
+          "L": "Vie scolaire",
+          "listeOnglets": [
+            {
+              "G": "RELEVEABSENCE",
+              "L": "Relevé d'absences et retards"
+            }
+          ]
+        },
+        {
+          "G": "ENSEIGNEMENTS",
+          "L": "Enseignements",
+          "listeOnglets": [
+            {
+              "G": "PROGRAMMECONTENU",
+              "L": "Contenu des cours"
+            },
+            {
+              "G": "PROGRAMMETAF",
+              "L": "Travail à faire"
+            }
+          ]
+        },
+        {
+          "G": "COMMUNICATION",
+          "L": "Communication",
+          "listeOnglets": [
+            {
+              "G": "INFOSSONDAGES",
+              "L": "Informations et sondages"
+            }
+          ]
+        },
+        {
+          "G": "INFOSPERSO",
+          "L": "Informations personnelles",
+          "listeOnglets": [
+            {
+              "G": "COMPTE",
+              "L": "Compte"
+            },
+            {
+              "G": "DOCUMENTSTELECHARGER",
+              "L": "Documents"
+            }
+          ]
+        }
+      ],
+      "AvecSaisie": true,
+      "Horaire": {
+        "genreLibelleGrille": 0,
+        "HorairesGrille": {
+          "_T": 26,
+          "V": "[0,2,4,6,8,10,12,14,16,18,20]"
+        },
+        "HorairesPlanning": {
+          "_T": 26,
+          "V": "[0,2,4,6,8,10,12,14,16,18,20]"
+        },
+        "SequencesGrille": {
+          "_T": 26,
+          "V": "[0..9]"
+        },
+        "SequencesPlanning": {
+          "_T": 26,
+          "V": "[0..9]"
+        },
+        "ListeHeures": [
+          {
+            "Debut": "08h00",
+            "Fin": "08h30"
+          },
+          {
+            "Debut": "08h30",
+            "Fin": "09h00"
+          },
+          {
+            "Debut": "09h00",
+            "Fin": "09h30"
+          },
+          {
+            "Debut": "09h30",
+            "Fin": "10h00"
+          },
+          {
+            "Debut": "10h00",
+            "Fin": "10h30"
+          },
+          {
+            "Debut": "10h30",
+            "Fin": "11h00"
+          },
+          {
+            "Debut": "11h00",
+            "Fin": "11h30"
+          },
+          {
+            "Debut": "11h30",
+            "Fin": "12h00"
+          },
+          {
+            "Debut": "12h00",
+            "Fin": "12h30"
+          },
+          {
+            "Debut": "12h30",
+            "Fin": "13h00"
+          },
+          {
+            "Debut": "13h00",
+            "Fin": "13h30"
+          },
+          {
+            "Debut": "13h30",
+            "Fin": "14h00"
+          },
+          {
+            "Debut": "14h00",
+            "Fin": "14h30"
+          },
+          {
+            "Debut": "14h30",
+            "Fin": "15h00"
+          },
+          {
+            "Debut": "15h00",
+            "Fin": "15h30"
+          },
+          {
+            "Debut": "15h30",
+            "Fin": "16h00"
+          },
+          {
+            "Debut": "16h00",
+            "Fin": "16h30"
+          },
+          {
+            "Debut": "16h30",
+            "Fin": "17h00"
+          },
+          {
+            "Debut": "17h00",
+            "Fin": "17h30"
+          },
+          {
+            "Debut": "17h30",
+            "Fin": "18h00"
+          },
+          {
+            "Debut": "18h00"
+          }
+        ],
+        "ListeSequences": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ]
+      },
+      "AutoriserAffichagePhoto": true,
+      "numeroPremiereSemaine": -2147483648,
+      "formatDureeEnChaine": 0,
+      "avecHeureFinPlaceCours": false,
+      "PlaceDebutGrille": 0,
+      "PlaceFinGrille": 20,
+      "AfficherLesJoursVerticalementEDT": true
+    },
+    "nom": "DemandeParametreUtilisateur",
+    "Signature": {
+      "Erreur": true
+    }
+  }
+}

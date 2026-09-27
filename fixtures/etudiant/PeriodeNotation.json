@@ -1,0 +1,143 @@
+{
+  "id": "PeriodeNotation",
+  "session": 5019806,
+  "no": "AF0A26B2B4CF444A1B186513DABB91AA",
+  "dataSec": {
+    "data": {
+      "listePeriodes": [
+        {
+          "L": "Trimestre 1",
+          "N": "37#qwj9uBfEgKZVYjcrBZbhl1_tLrRmO0xlYatLt09jCEI",
+          "P": 7,
+          "calendrier": {
+            "_T": 24,
+            "V": {
+              "L": "Trimestriel",
+              "N": "6#w8uTE1C_5ev8-oIop1CZlYYl9ItGMN9DEmh9g8Ukuro"
+            }
+          },
+          "publique": {
+            "_T": 24,
+            "V": {
+              "L": "RELATION COMMERCE DIGITAL 1",
+              "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+              "G": 1
+            }
+          },
+          "couleur": "#F5E3AC",
+          "abbr": "T1",
+          "dates": {
+            "debut": {
+              "_T": 7,
+              "V": "31/08/2026"
+            },
+            "fin": {
+              "_T": 7,
+              "V": "29/11/2026"
+            }
+          }
+        },
+        {
+          "L": "Trimestre 2",
+          "N": "37#BcL6GfI6LrMQz8jJVLYRBIFSLexOfJ39l8Kgt56Sh_s",
+          "P": 8,
+          "calendrier": {
+            "_T": 24,
+            "V": {
+              "L": "Trimestriel",
+              "N": "6#w8uTE1C_5ev8-oIop1CZlYYl9ItGMN9DEmh9g8Ukuro"
+            }
+          },
+          "publique": {
+            "_T": 24,
+            "V": {
+              "L": "RELATION COMMERCE DIGITAL 1",
+              "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+              "G": 1
+            }
+          },
+          "couleur": "#ACF5CE",
+          "abbr": "T2",
+          "dates": {
+            "debut": {
+              "_T": 7,
+              "V": "30/11/2026"
+            },
+            "fin": {
+              "_T": 7,
+              "V": "28/02/2027"
+            }
+          }
+        },
+        {
+          "L": "Trimestre 3",
+          "N": "37#ppP4p2Kl6xTk_L6Kl63vHUqD4RU6pnSpwk0wGlQ6-hs",
+          "P": 9,
+          "calendrier": {
+            "_T": 24,
+            "V": {
+              "L": "Trimestriel",
+              "N": "6#w8uTE1C_5ev8-oIop1CZlYYl9ItGMN9DEmh9g8Ukuro"
+            }
+          },
+          "publique": {
+            "_T": 24,
+            "V": {
+              "L": "RELATION COMMERCE DIGITAL 1",
+              "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+              "G": 1
+            }
+          },
+          "couleur": "#F5ACD0",
+          "abbr": "T3",
+          "dates": {
+            "debut": {
+              "_T": 7,
+              "V": "01/03/2027"
+            },
+            "fin": {
+              "_T": 7,
+              "V": "30/05/2027"
+            }
+          }
+        },
+        {
+          "L": "BTS BLANC",
+          "N": "37#pxEEYhTq7x0ZUrUpeAkAhZbAOtBgxhp_NWoGhFOXgko",
+          "P": 4,
+          "calendrier": {
+            "_T": 24,
+            "V": {
+              "N": "0"
+            }
+          },
+          "publique": {
+            "_T": 24,
+            "V": {
+              "L": "RELATION COMMERCE DIGITAL 1",
+              "N": "50#EPTXr3bTJDaWZ2f3Er6rYk6T3YsSlCo6Y9tpZ06s6oA",
+              "G": 1
+            }
+          },
+          "couleur": "#808080",
+          "abbr": "",
+          "dates": {
+            "debut": {
+              "_T": 7,
+              "V": "19/04/2027"
+            },
+            "fin": {
+              "_T": 7,
+              "V": "23/04/2027"
+            }
+          }
+        }
+      ],
+      "periodeCourante": {
+        "L": "Trimestre 1",
+        "N": "37#qwj9uBfEgKZVYjcrBZbhl1_tLrRmO0xlYatLt09jCEI"
+      }
+    },
+    "nom": "PeriodeNotation"
+  }
+}

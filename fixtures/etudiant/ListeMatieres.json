@@ -1,0 +1,13 @@
+{
+  "id": "ListeMatieres",
+  "session": 5019806,
+  "no": "AE7768603240EF3DE75B70984A0DD62E",
+  "dataSec": {
+    "data": {},
+    "nom": "ListeMatieres",
+    "Signature": {
+      "Erreur": true,
+      "MessageErreur": "Vos droits sont insuffisants pour effectuer cette opération."
+    }
+  }
+}

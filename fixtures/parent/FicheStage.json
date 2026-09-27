@@ -1,0 +1,218 @@
+{
+  "id": "FicheStage",
+  "session": 7241368,
+  "no": "33FB87B23BDEB551135268CB362F6DAB",
+  "dataSec": {
+    "data": {
+      "ficheStage": {
+        "_T": 24,
+        "V": {
+          "L": "Animation du réseau",
+          "N": "57#TDA2sHi_PyBJG2UcOvnfXqJu0g0ETs08T3Qetz-A0Pg",
+          "libelleDates": "du 09/09/26 au 18/06/27",
+          "dureeStage": 8.16666666666667,
+          "estAlternance": true,
+          "typeContrat": 1,
+          "dateDebutContrat": {
+            "_T": 7,
+            "V": "09/09/2026"
+          },
+          "dateFinContrat": {
+            "_T": 7,
+            "V": "18/06/2027"
+          },
+          "sujetDetaille": "",
+          "conventionSignee": false,
+          "objectifs": "",
+          "activitesPrevues": "",
+          "competencesVisees": "",
+          "modalitesConcertation": "",
+          "modalitesEvaluation": "",
+          "enseignantTuteur": {
+            "_T": 24,
+            "V": {
+              "L": "M. DUPONT Pierre",
+              "N": "50#9bTMlD3SNhYkCwdzesFpplTcVk4ztdQRnQrVY5IJTqk",
+              "G": 0
+            }
+          },
+          "enseignantResponsable": {
+            "_T": 24,
+            "V": {
+              "L": "Mme SANCHEZ Angelica",
+              "N": "50#H5Ji-_gzu0_GJ5tOlzTywO47aNnOFIk39mN6PL8ML8k",
+              "G": 0
+            }
+          },
+          "piecesjointes": {
+            "_T": 24,
+            "V": []
+          },
+          "entreprise": {
+            "_T": 24,
+            "V": {
+              "L": "BATI PLUS",
+              "N": "19#_MQKLDN24-k4USZDIKKYfL8lbyuriQmCFs7Ot1yr1QY",
+              "siret": "11257221384252",
+              "estSiegeSocial": false,
+              "nomCommercial": "",
+              "adresse1": "",
+              "adresse2": "",
+              "adresse3": "13 rue du Val",
+              "adresse4": "",
+              "codePostal": "13000",
+              "ville": "Marseille",
+              "province": "",
+              "pays": "France",
+              "telephoneFixeIndicatif": "",
+              "telephoneFixe": "0195456354",
+              "portableIndicatif": "",
+              "portable": "",
+              "faxIndicatif": "",
+              "fax": "",
+              "siteInternet": {
+                "_T": 23,
+                "V": ""
+              },
+              "email": "",
+              "activite": {
+                "_T": 24,
+                "V": {
+                  "L": "Artisanale",
+                  "N": "20#AUikDXulb4UUGUQO9UuuPxxR9s5XBSr3YICa5ZWWNFg"
+                }
+              },
+              "documents": {
+                "_T": 24,
+                "V": []
+              },
+              "commentairePublie": "Ouvert le dimanche",
+              "responsable": {
+                "_T": 24,
+                "V": {
+                  "L": "M. ANTOINE L.",
+                  "N": "26#eVMByM-KBIG2bseVaFv1q7a8XdgVK4rYv9qGlDw--Z8",
+                  "fonction": "Vendeur"
+                }
+              }
+            }
+          },
+          "maitresDeStage": {
+            "_T": 24,
+            "V": [
+              {
+                "L": "M. ANTOINE L.",
+                "N": "26#eVMByM-KBIG2bseVaFv1q7a8XdgVK4rYv9qGlDw--Z8",
+                "fonction": "Vendeur"
+              }
+            ]
+          },
+          "chargesDeContrat": {
+            "_T": 24,
+            "V": []
+          },
+          "jours": {
+            "_T": 24,
+            "V": [
+              {
+                "G": 1,
+                "L": "Lun.",
+                "horaires": {
+                  "_T": 24,
+                  "V": [
+                    {
+                      "G": 0,
+                      "L": "09h00 - 12h00"
+                    },
+                    {
+                      "G": 1,
+                      "L": "13h00 - 17h00"
+                    }
+                  ]
+                },
+                "dureeJournee": 0.291666666666667
+              },
+              {
+                "G": 2,
+                "L": "Mar.",
+                "horaires": {
+                  "_T": 24,
+                  "V": [
+                    {
+                      "G": 0,
+                      "L": "09h00 - 12h00"
+                    },
+                    {
+                      "G": 1,
+                      "L": "13h00 - 17h00"
+                    }
+                  ]
+                },
+                "dureeJournee": 0.291666666666667
+              },
+              {
+                "G": 3,
+                "L": "Mer.",
+                "horaires": {
+                  "_T": 24,
+                  "V": [
+                    {
+                      "G": 0,
+                      "L": "09h00 - 12h00"
+                    },
+                    {
+                      "G": 1,
+                      "L": "13h00 - 17h00"
+                    }
+                  ]
+                },
+                "dureeJournee": 0.291666666666667
+              },
+              {
+                "G": 4,
+                "L": "Jeu.",
+                "horaires": {
+                  "_T": 24,
+                  "V": []
+                },
+                "dureeJournee": 0
+              },
+              {
+                "G": 5,
+                "L": "Ven.",
+                "horaires": {
+                  "_T": 24,
+                  "V": []
+                },
+                "dureeJournee": 0
+              },
+              {
+                "G": 6,
+                "L": "Sam.",
+                "horaires": {
+                  "_T": 24,
+                  "V": []
+                },
+                "dureeJournee": 0
+              },
+              {
+                "G": 7,
+                "L": "Dim.",
+                "horaires": {
+                  "_T": 24,
+                  "V": []
+                },
+                "dureeJournee": 0
+              }
+            ]
+          },
+          "dureeHebdomadaire": 0.875,
+          "nbSemaines": 30,
+          "nbJours": 88,
+          "dureeAbsence": 0
+        }
+      }
+    },
+    "nom": "FicheStage"
+  }
+}

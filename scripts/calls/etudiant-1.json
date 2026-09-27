@@ -1,0 +1,6 @@
+[
+  {"name":"edt_grille","id":"FonctionEmploiDuTemps","onglet":"COURS.EDT.EDT_GRILLE","data":{"GenrePeriodeEDT":2,"GenreAffichageEDT":0,"FiltreRessources":{"_T":26,"V":"[7]"},"AvecIndisponibilites":false,"AvecDomaineCours":true,"AvecDomainePere":false,"filterPlagesHoraires":false,"ignorerCoursAnnules":false,"avecInfosAppel":false,"Domaine":{"_T":8,"V":"[4]"}}},
+  {"name":"PeriodeNotation","id":"PeriodeNotation","onglet":"NOTATION.DERNIERESNOTES"},
+  {"name":"PageDernieresNotes","id":"PageDernieresNotes","onglet":"NOTATION.DERNIERESNOTES"},
+  {"name":"PageAccueil","id":"PageAccueil","onglet":"ACCUEIL"}
+]

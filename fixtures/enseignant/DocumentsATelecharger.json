@@ -1,0 +1,54 @@
+{
+  "id": "DocumentsATelecharger",
+  "session": 6850553,
+  "no": "485BDD10754DCD86EAF57411A1C920BA",
+  "dataSec": {
+    "data": {
+      "listeDocuments": {
+        "_T": 24,
+        "V": []
+      },
+      "listeDocumentsMembre": {
+        "_T": 24,
+        "V": []
+      },
+      "listeCategories": {
+        "_T": 24,
+        "V": [
+          {
+            "L": "Divers",
+            "N": "0",
+            "couleur": "#FFA500"
+          }
+        ]
+      },
+      "listeDocumentsSignatureElecASigner": {
+        "_T": 24,
+        "V": []
+      },
+      "listeDocumentsAFournir": {
+        "_T": 24,
+        "V": [
+          {
+            "L": "Déclaration de cumul d'activité",
+            "N": "87#264d7YCb-Ogf3uNZPaDGokOvZswlzbtmld3SL4_Skq0",
+            "G": 32,
+            "listePJ": {
+              "_T": 24,
+              "V": []
+            },
+            "dateLimiteDepot": {
+              "_T": 7,
+              "V": "11/12/2025"
+            },
+            "estDocADeposer": false,
+            "estConsultable": true,
+            "estDeposable": false,
+            "estDepose": false
+          }
+        ]
+      }
+    },
+    "nom": "DocumentsATelecharger"
+  }
+}

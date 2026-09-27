@@ -1,0 +1,677 @@
+{
+  "id": "FonctionEmploiDuTemps",
+  "session": 7241368,
+  "no": "9B607F47C5A1C2B564C9BDBA0087612F",
+  "dataSec": {
+    "data": {
+      "ListeCours": [
+        {
+          "N": "10#xKAfeFAunr3GvkOpH-WMJ-wUhsh9q4esHoxgVDclgEw",
+          "G": 4,
+          "p": 31,
+          "d": 4,
+          "e": 3,
+          "co": "#D6A0C8",
+          "nbE": 32,
+          "dom": "[1..4,27..29,31]",
+          "listeC": [
+            {
+              "G": 0,
+              "C": {
+                "L": "GESTION COMMERCIALE",
+                "N": "25#VS9Hjpq4d6i3mYUE1coF9ZoXbl9npJ3V0SqT0Ykxsa8",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 1,
+              "C": [
+                {
+                  "L": "DI MARTINO",
+                  "N": "50#KqfQL-R8kv4b3SO22fSPsSoV0KYSr_GjeUAevP-PjuE",
+                  "P": 7,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#Vm_XKGODOkwUgJ9mnpm3f754eKY5ltSBpdcrVeHRGI8",
+                  "P": 35,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 3,
+              "C": [
+                {
+                  "L": "Salle C",
+                  "N": "50#Nz5zIZDFVReGgscn-dL5yiFLZRAhltVPUfbAFJwnkxk",
+                  "P": 182,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 6,
+              "C": "4"
+            }
+          ],
+          "avecVisio": false
+        },
+        {
+          "N": "10#h6X6ePv08ME5VxxkZ9tRsXNQdzWNVYq2SHdWwA-Zj6E",
+          "G": 4,
+          "p": 25,
+          "d": 4,
+          "e": 3,
+          "co": "#4FD12E",
+          "nbE": 32,
+          "dom": "[4]",
+          "listeC": [
+            {
+              "G": 0,
+              "C": {
+                "L": "MARKETING DIGITAL",
+                "N": "25#1LCbg92z9TpF8dOdemACHmuFFCxh-WYlKRbNNbE4eKU",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 1,
+              "C": [
+                {
+                  "L": "BROCHIER",
+                  "N": "50#2mffNn28rQlKO_FpKGEOAv5jUOCmIey4xX3y0sjXZb8",
+                  "P": 6,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#Vm_XKGODOkwUgJ9mnpm3f754eKY5ltSBpdcrVeHRGI8",
+                  "P": 35,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 3,
+              "C": [
+                {
+                  "L": "Salle D",
+                  "N": "50#RfKkxjMKxtOHHrMsuKZNJIFgchyJ5Nb6c4WbfmTerio",
+                  "P": 183,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 6,
+              "C": "10"
+            },
+            {
+              "G": 11,
+              "C": [
+                {
+                  "L": "Progression RELATION CLIENT A DISTANCE",
+                  "N": "40#OoFkV7GQoD660ltXmLX8gF5GeT3VOGWYGhTRICbdgMA",
+                  "matiere": {
+                    "_T": 24,
+                    "V": {
+                      "L": "MARKETING DIGITAL",
+                      "N": "25#1LCbg92z9TpF8dOdemACHmuFFCxh-WYlKRbNNbE4eKU",
+                      "G": 0,
+                      "p": true
+                    }
+                  },
+                  "avecContenu": false,
+                  "avecTAD": false,
+                  "avecTAF": false,
+                  "avecDocuments": false
+                },
+                {
+                  "L": "MARKETING DIGITAL",
+                  "N": "40#7rAyCObJbOsXj-7qqSx4YEl2I4KlG0_3UaRlq5ipvjo",
+                  "matiere": {
+                    "_T": 24,
+                    "V": {
+                      "L": "MARKETING DIGITAL",
+                      "N": "25#1LCbg92z9TpF8dOdemACHmuFFCxh-WYlKRbNNbE4eKU",
+                      "G": 0,
+                      "p": true
+                    }
+                  },
+                  "avecContenu": true,
+                  "titreContenu": "Les leviers du marketing digital",
+                  "avecContenuPJ": false,
+                  "avecTAD": false,
+                  "avecTAF": true,
+                  "avecTAFPJ": true,
+                  "avecDocuments": false
+                }
+              ]
+            }
+          ],
+          "avecVisio": true,
+          "listeLiensVisio": {
+            "_T": 24,
+            "V": [
+              {
+                "L": "Visioconférence",
+                "N": "78#Ez5WRhiKz9hMpmB9E_zAQFz9husgEtpUmt1PU-AAX0Y",
+                "libelleLien": "Visioconférence",
+                "url": "https://www.index-education.com/fr/presentation-hyperplanning.php",
+                "commentaire": "Connectez-vous avec vos identifiants habituels.",
+                "descriptif": "<a href=\"https://www.index-education.com/fr/presentation-hyperplanning.php\">Visioconférence</a><br />https://www.index-education.com/fr/presentation-hyperplanning.php<br />Connectez-vous avec vos identifiants habituels.",
+                "concerneProgression": false
+              }
+            ]
+          }
+        },
+        {
+          "N": "10#2RZ-sEeZxGb52O-HA-2GG1_XNfk4kHdm1zRrQodP1ic",
+          "G": 4,
+          "p": 18,
+          "d": 2,
+          "e": 3,
+          "co": "#144897",
+          "nbE": 72,
+          "dom": "[4]",
+          "listeC": [
+            {
+              "G": 0,
+              "C": {
+                "L": "ANGLAIS",
+                "N": "25#xLdk-tuj7bIxe_JH1-Wh22zUrGMEwYSEhXZ5Kbx4jPU",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 1,
+              "C": [
+                {
+                  "L": "DUPONT",
+                  "N": "50#9bTMlD3SNhYkCwdzesFpplTcVk4ztdQRnQrVY5IJTqk",
+                  "P": 8,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#Vm_XKGODOkwUgJ9mnpm3f754eKY5ltSBpdcrVeHRGI8",
+                  "P": 35,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 6,
+              "C": "1"
+            }
+          ],
+          "avecVisio": false,
+          "strDispense": "Dispense sans participation requise "
+        },
+        {
+          "N": "10#MlyGkeTAPQ9qS1nCJ8iAyUEK6tc8_jTm1YwL9mlp-_k",
+          "G": 4,
+          "p": 35,
+          "d": 4,
+          "e": 1,
+          "co": "#144897",
+          "nbE": 8,
+          "oral": {
+            "_T": 24,
+            "V": {
+              "N": "32#_-iqtGi5USj-VaMIS5k4VKAXx_aWIwvTNkN542o1Nak",
+              "details": {
+                "_T": 24,
+                "V": [
+                  {
+                    "N": "33#CK1OvbuPV2dF96kpliGUqeLvwsrZddA98yDo-rn8jiI",
+                    "matiere": {
+                      "_T": 24,
+                      "V": {
+                        "L": "ANGLAIS",
+                        "N": "25#xLdk-tuj7bIxe_JH1-Wh22zUrGMEwYSEhXZ5Kbx4jPU",
+                        "couleur": "#144897"
+                      }
+                    },
+                    "ressources": {
+                      "_T": 24,
+                      "V": [
+                        {
+                          "L": "SENEZE",
+                          "N": "50#M30wpxwVW2AG5ITTETLgK3z9Q5pL1IvEXHFcPZRCIqQ",
+                          "G": 0
+                        }
+                      ]
+                    },
+                    "estPublie": false,
+                    "avecHPassage": false,
+                    "typeGenreHeureConvocation": 1,
+                    "etatEleveOral": 0,
+                    "avecConvoc": false,
+                    "avecConvocPDF": false
+                  }
+                ]
+              },
+              "etatValide": true,
+              "avecConvoc": false
+            }
+          },
+          "dom": "[4]",
+          "listeC": [
+            {
+              "G": 0,
+              "C": {
+                "L": "ANGLAIS",
+                "N": "25#xLdk-tuj7bIxe_JH1-Wh22zUrGMEwYSEhXZ5Kbx4jPU",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 1,
+              "C": [
+                {
+                  "L": "SENEZE",
+                  "N": "50#M30wpxwVW2AG5ITTETLgK3z9Q5pL1IvEXHFcPZRCIqQ",
+                  "P": 21,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 6,
+              "C": "1"
+            }
+          ],
+          "avecVisio": false,
+          "strDispense": "Dispense sans participation requise "
+        },
+        {
+          "N": "10#oBuKTNoCNmf6W2mUi7UIAVQkAQVZu_mkfjYq6Fy3v8M",
+          "G": 4,
+          "p": 21,
+          "d": 4,
+          "e": 3,
+          "co": "#ED6566",
+          "nbE": 32,
+          "dom": "[1..4,7..14,16]",
+          "listeC": [
+            {
+              "G": 0,
+              "C": {
+                "L": "C.E.J.M.",
+                "N": "25#XuQN0qreLqF1xkOT4fDF2Vx8-JW2g-i8XNB0gTR0kAI",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 1,
+              "C": [
+                {
+                  "L": "LUNEL",
+                  "N": "50#i8v-gY5XeG5m77VOxJ1TK_Q8fSnZrgnZ1e-Yx6xEyB8",
+                  "P": 15,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#Vm_XKGODOkwUgJ9mnpm3f754eKY5ltSBpdcrVeHRGI8",
+                  "P": 35,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 3,
+              "C": [
+                {
+                  "L": "Salle 4",
+                  "N": "50#5LNu7IHcBmFXFcoia9kTjJVJKuFBnHCtdnXcvHNmOlI",
+                  "P": 179,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 6,
+              "C": "13"
+            }
+          ],
+          "avecVisio": false
+        },
+        {
+          "N": "10#NDnPmIErDEfxr2GNjnR3n89VSOwlMAtN3iD1gpFO1Ls",
+          "G": 4,
+          "p": 5,
+          "d": 4,
+          "e": 3,
+          "co": "#6ACAF2",
+          "nbE": 32,
+          "dom": "[1..5,8,11..13,16,22..23,25..27,29,31..33,36]",
+          "listeC": [
+            {
+              "G": 0,
+              "C": {
+                "L": "ATELIER PROFESSIONNEL",
+                "N": "25#CcbNy1wYLBEOfNgThw0vonkGjJYEEQKC8e_4uFZHe8Q",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 1,
+              "C": [
+                {
+                  "L": "ZARDOZ",
+                  "N": "50#cE2qFf7VDB_2momd2kwx5r1G4w2d0SQ3qtGmXI6LY5U",
+                  "P": 28,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#Vm_XKGODOkwUgJ9mnpm3f754eKY5ltSBpdcrVeHRGI8",
+                  "P": 35,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 3,
+              "C": [
+                {
+                  "L": "Salle A",
+                  "N": "50#QrLE3V6uiSK5G7zK59nTcXEd6UZCxgQ9TLaSZKbjRS8",
+                  "P": 180,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 6,
+              "C": "4"
+            }
+          ],
+          "avecVisio": false
+        },
+        {
+          "N": "10#fFoqV4k_ru3UPjfPQSxmUG-bZ10Mjd3Pv53yDuMuVLY",
+          "G": 4,
+          "p": 11,
+          "d": 4,
+          "e": 3,
+          "co": "#4FD12E",
+          "nbE": 32,
+          "dom": "[1..5,7,10,13..14,16,22..23,25..29,31..33,35..43]",
+          "listeC": [
+            {
+              "G": 0,
+              "C": {
+                "L": "C.G.E.",
+                "N": "25#8zUbsroz93W4dlFravdzAbDMN3hxJbnz762G7CiQNSM",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 1,
+              "C": [
+                {
+                  "L": "BROCHIER",
+                  "N": "50#2mffNn28rQlKO_FpKGEOAv5jUOCmIey4xX3y0sjXZb8",
+                  "P": 6,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#Vm_XKGODOkwUgJ9mnpm3f754eKY5ltSBpdcrVeHRGI8",
+                  "P": 35,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 3,
+              "C": [
+                {
+                  "L": "Salle A",
+                  "N": "50#QrLE3V6uiSK5G7zK59nTcXEd6UZCxgQ9TLaSZKbjRS8",
+                  "P": 180,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 6,
+              "C": "4"
+            }
+          ],
+          "avecVisio": false
+        },
+        {
+          "N": "10#2YnFo_y3k6dsp48IVRDX4kOi5r3OE4Y6nazFjmi-HBA",
+          "G": 4,
+          "p": 1,
+          "d": 4,
+          "e": 3,
+          "co": "#144897",
+          "nbE": 32,
+          "dom": "[1..5,7..14,16]",
+          "listeC": [
+            {
+              "G": 0,
+              "C": {
+                "L": "ANGLAIS",
+                "N": "25#xLdk-tuj7bIxe_JH1-Wh22zUrGMEwYSEhXZ5Kbx4jPU",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 1,
+              "C": [
+                {
+                  "L": "ALWRIGHT",
+                  "N": "50#CYLdJy_E5BtwvM00GyqQdR8MGiQdEi7yq6IKhPEqDgs",
+                  "P": 2,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#Vm_XKGODOkwUgJ9mnpm3f754eKY5ltSBpdcrVeHRGI8",
+                  "P": 35,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 3,
+              "C": [
+                {
+                  "L": "Salle H",
+                  "N": "50#MnukcQ0OFgbufrUVQRFRZgNxarqm2s0n9WATxxTRdmk",
+                  "P": 187,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 6,
+              "C": "4"
+            },
+            {
+              "G": 11,
+              "C": [
+                {
+                  "L": "ANGLAIS DU DESIGN 1",
+                  "N": "40#da_BPji0M2DLkYXK5UTxX1xZkHwR5mBtKMXy5FkxP-c",
+                  "matiere": {
+                    "_T": 24,
+                    "V": {
+                      "L": "ANGLAIS",
+                      "N": "25#xLdk-tuj7bIxe_JH1-Wh22zUrGMEwYSEhXZ5Kbx4jPU",
+                      "G": 0,
+                      "p": true
+                    }
+                  },
+                  "avecContenu": true,
+                  "titreContenu": "Décrire son entreprise",
+                  "avecContenuPJ": false,
+                  "avecTAD": false,
+                  "avecTAF": false,
+                  "avecDocuments": true
+                }
+              ]
+            }
+          ],
+          "avecVisio": false,
+          "strDispense": "Dispense sans participation requise "
+        }
+      ],
+      "ListeAnnulationsCours": [
+        {
+          "N": "3#2QqEYV_iIRr9Wk1K15JxFQluVyEvpAkDeEn2bMV0Hgg",
+          "G": 4,
+          "motif": "Annulation",
+          "p": 35,
+          "d": 4,
+          "couleur": "#ED6566",
+          "domaine": "[4]",
+          "listeContenus": [
+            {
+              "G": 0,
+              "C": {
+                "L": "C.E.J.M.",
+                "N": "25#XuQN0qreLqF1xkOT4fDF2Vx8-JW2g-i8XNB0gTR0kAI",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 1,
+              "C": [
+                {
+                  "L": "LUNEL",
+                  "N": "50#i8v-gY5XeG5m77VOxJ1TK_Q8fSnZrgnZ1e-Yx6xEyB8",
+                  "P": 15,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#Vm_XKGODOkwUgJ9mnpm3f754eKY5ltSBpdcrVeHRGI8",
+                  "P": 35,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 3,
+              "C": [
+                {
+                  "L": "Salle C",
+                  "N": "50#Nz5zIZDFVReGgscn-dL5yiFLZRAhltVPUfbAFJwnkxk",
+                  "P": 182,
+                  "p": true
+                }
+              ]
+            }
+          ],
+          "estRemunere": false,
+          "commentaire": ""
+        }
+      ],
+      "OrdreContenuDuCours": [
+        0,
+        1,
+        13,
+        12,
+        14,
+        15,
+        3,
+        6,
+        11
+      ],
+      "stages": {
+        "matin": {
+          "alt": {
+            "_T": 26,
+            "V": "[3..5]"
+          }
+        },
+        "apresMidi": {
+          "alt": {
+            "_T": 26,
+            "V": "[3..5]"
+          }
+        }
+      }
+    },
+    "nom": "FonctionEmploiDuTemps",
+    "Signature": {
+      "autorisations": {
+        "consulterPonderationCours": true,
+        "LimiterSaisieAbsences": true,
+        "TailleMaxPieceJointeProgression": 0,
+        "TailleMaxPieceJointe": 5120000,
+        "AvecSaisieCVEC": true,
+        "AutoriserEnvoiMail": true,
+        "ConsulterInfosSondages": true,
+        "datesSaisieAbsencesAutorisees": [
+          {
+            "_T": 7,
+            "V": "21/09/2026"
+          }
+        ],
+        "AvecCoursAnnules": true
+      },
+      "notifications": {
+        "compteurCentraleNotif": 0
+      }
+    }
+  }
+}

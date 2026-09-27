@@ -1,0 +1,624 @@
+{
+  "id": "FonctionEmploiDuTemps",
+  "session": 4136435,
+  "no": "A86E5FB12C364F48E8AB5BD9838D32D8",
+  "dataSec": {
+    "data": {
+      "ListeCours": [
+        {
+          "N": "10#mW4ECAhwhw2ChVLk3TCFElNA6a9iHZ3Tp2AGsTDVGVw",
+          "G": 4,
+          "p": 14,
+          "d": 4,
+          "e": 3,
+          "co": "#FF5041",
+          "util": true,
+          "nbE": 40,
+          "errO": {
+            "_T": 26,
+            "V": "[1]"
+          },
+          "dom": "[3..8,11..15,20..24,27..33,36..41]",
+          "listeC": [
+            {
+              "G": 0,
+              "C": {
+                "L": "HISTOIRE DE L'ART",
+                "N": "25#uDy3GayTMHR_hISZVZAlfZELfnpp2rpjQ-BuHP7-kUg",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "DESIGN 1",
+                  "N": "50#ulXM5zHmmkfSwGdO8Us8iGcWomEXJJcGLcdUyeij95Q",
+                  "P": 29,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 3,
+              "C": [
+                {
+                  "L": "Salle 1",
+                  "N": "50#AehX9n-DUOZhFKTZc3Y49hIugN9y_G7p0YuxMp8eVO0",
+                  "P": 176,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 5,
+              "C": {}
+            },
+            {
+              "G": 11,
+              "C": [
+                {
+                  "L": "HISTOIRE DE L ART 1",
+                  "N": "40#xbaE1JMHnLEZcPyDXNnTNnGO4AkP7i5yLbDGZFxlvG0",
+                  "matiere": {
+                    "_T": 24,
+                    "V": {
+                      "L": "HISTOIRE DE L'ART",
+                      "N": "25#uDy3GayTMHR_hISZVZAlfZELfnpp2rpjQ-BuHP7-kUg",
+                      "G": 0,
+                      "p": true
+                    }
+                  },
+                  "avecContenu": true,
+                  "titreContenu": "Art du Néolithique",
+                  "avecContenuPJ": false,
+                  "avecTAD": false,
+                  "avecTAF": true,
+                  "avecTAFPJ": true,
+                  "avecDocuments": true
+                }
+              ]
+            }
+          ],
+          "nbProg": 1,
+          "avecVisio": true,
+          "listeLiensVisio": {
+            "_T": 24,
+            "V": [
+              {
+                "L": "Lien vers la visioconférence",
+                "N": "78#mtxMngsafRODydcHtu6dBDwlgNewcrGb7x9v6_25drE",
+                "libelleLien": "Lien vers la visioconférence",
+                "url": "https://www.index-education.com/fr/presentation-hyperplanning.php",
+                "commentaire": "Connectez-vous 5 minutes avant.",
+                "descriptif": "<a href=\"https://www.index-education.com/fr/presentation-hyperplanning.php\">Lien vers la visioconférence</a><br />https://www.index-education.com/fr/presentation-hyperplanning.php<br />Connectez-vous 5 minutes avant.",
+                "concerneProgression": true
+              }
+            ]
+          }
+        },
+        {
+          "N": "10#j0dQtM0EaLLMe2LmrGQfGeBYQVSOjppZGqIvop0co38",
+          "G": 4,
+          "p": 41,
+          "d": 4,
+          "e": 3,
+          "co": "#8DE614",
+          "util": true,
+          "nbE": 40,
+          "errO": {
+            "_T": 26,
+            "V": "[1]"
+          },
+          "dom": "[3..8,11..15,20..24,27..33,36..41]",
+          "listeC": [
+            {
+              "G": 0,
+              "C": {
+                "L": "COMMUNICATION VISUELLE",
+                "N": "25#7QeyUti9yprbBH2Nw_eKLV1z5cl9DCfAddxkmQ42zuw",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "DESIGN 2",
+                  "N": "50#l742fu7eXYRaAargNJHyFT3d8onrM5Vi_0SLIc0zxuo",
+                  "P": 30,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 3,
+              "C": [
+                {
+                  "L": "Salle 2",
+                  "N": "50#oH7SKSogYsrRfCfEyBW7tFUmXGUpCn2qjae0Kbd0dCA",
+                  "P": 177,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 5,
+              "C": {}
+            }
+          ],
+          "nbProg": 0,
+          "avecVisio": false
+        },
+        {
+          "N": "10#eVLeVZ06T72VMfu_BSDfryyrJufqjzGaXRPvaEw4clA",
+          "G": 4,
+          "p": 18,
+          "d": 2,
+          "e": 3,
+          "co": "#144897",
+          "util": true,
+          "nbE": 72,
+          "dom": "[4]",
+          "listeC": [
+            {
+              "G": 0,
+              "C": {
+                "L": "ANGLAIS",
+                "N": "25#4m2-M7n4xcTP9TA-wAqXVaJyZotEKX1oVXIQRzI5Rg0",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#vF7y45Jd6LjYUNFhT2y60qyAMvSUbvyMA418u_6mj_E",
+                  "P": 35,
+                  "p": true
+                },
+                {
+                  "L": "DESIGN 1",
+                  "N": "50#ulXM5zHmmkfSwGdO8Us8iGcWomEXJJcGLcdUyeij95Q",
+                  "P": 29,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 5,
+              "C": {}
+            }
+          ],
+          "nbProg": 0,
+          "avecVisio": false
+        },
+        {
+          "N": "10#LWJToU8lNtHsKXye4BfpQxAzoVY8KpLGW6wivXeTHZI",
+          "G": 4,
+          "p": 0,
+          "d": 8,
+          "e": 3,
+          "co": "#FF5041",
+          "util": true,
+          "nbE": 5,
+          "dom": "[4]",
+          "listeC": [
+            {
+              "G": 0,
+              "C": {
+                "L": "HISTOIRE DE L'ART",
+                "N": "25#uDy3GayTMHR_hISZVZAlfZELfnpp2rpjQ-BuHP7-kUg",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 15,
+              "C": [
+                {
+                  "L": "BOUNET Julien",
+                  "N": "50#-MJvFN45ab6dhZjrpwHD0FeqhI0U36k24brXtKeNLq8",
+                  "P": 99,
+                  "p": true
+                },
+                {
+                  "L": "COMPIEGNE Manon",
+                  "N": "50#XV92JdQ09tuQ3Z7NN_5j3ebctU64RLe1V0FHnQ9uG9o",
+                  "P": 115,
+                  "p": true
+                },
+                {
+                  "L": "DEMAY Corentin",
+                  "N": "50#2-v9O4mlplr32zwaRnYndvyw8p2N2HD1w4KiqMmV0Oc",
+                  "P": 128,
+                  "p": true
+                },
+                {
+                  "L": "CHIABO Gregory",
+                  "N": "50#X6UGGmw4naMfG3OQsD3PbJdD4I6bxJSqxHvXV-zTUvU",
+                  "P": 106,
+                  "p": true
+                },
+                {
+                  "L": "ARMAND Tony",
+                  "N": "50#VNqyBpGxiZbSs4RTqVSGpXU5Fc2FUrASAiPap2MSAJg",
+                  "P": 90,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 5,
+              "C": {
+                "str": "Sortie au Musée du Louvre"
+              }
+            }
+          ],
+          "nbProg": 0,
+          "avecVisio": false
+        },
+        {
+          "N": "10#H--JiSa_s5D1Ljd9Dl-coGrGrPfIpu6o5SQrlkdBpFo",
+          "G": 4,
+          "p": 20,
+          "d": 8,
+          "e": 3,
+          "co": "#8DE614",
+          "util": true,
+          "nbE": 40,
+          "errO": {
+            "_T": 26,
+            "V": "[1]"
+          },
+          "dom": "[3..8,11..15,20..24,27..33,36..41]",
+          "listeC": [
+            {
+              "G": 0,
+              "C": {
+                "L": "COMMUNICATION VISUELLE",
+                "N": "25#7QeyUti9yprbBH2Nw_eKLV1z5cl9DCfAddxkmQ42zuw",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "DESIGN 2",
+                  "N": "50#l742fu7eXYRaAargNJHyFT3d8onrM5Vi_0SLIc0zxuo",
+                  "P": 30,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 3,
+              "C": [
+                {
+                  "L": "Salle 1",
+                  "N": "50#AehX9n-DUOZhFKTZc3Y49hIugN9y_G7p0YuxMp8eVO0",
+                  "P": 176,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 5,
+              "C": {}
+            }
+          ],
+          "nbProg": 0,
+          "avecVisio": false
+        },
+        {
+          "N": "10#-cAG8Jxywfs1FJBs74NOcTdugksO7LWCrkcoVw1LlJQ",
+          "G": 4,
+          "p": 82,
+          "d": 18,
+          "e": 1,
+          "co": "#FFED00",
+          "util": true,
+          "nbE": 27,
+          "oral": {
+            "_T": 24,
+            "V": {
+              "N": "32#dYfi-2sDqN8k9-nbvT9uqu79dZJ-YGUvjtZGydusOqc",
+              "details": {
+                "_T": 24,
+                "V": [
+                  {
+                    "N": "33#p_E_D1B0VCCnP_4qZzGZHyYKDuyGpX-M_esSvsUcFpg",
+                    "matiere": {
+                      "_T": 24,
+                      "V": {
+                        "L": "COMMUNICATION COMMERCIALE",
+                        "N": "25#OTpS5a9c0VLH61wyZAZBUI0dsJpdUiAlkb33fxl-yl4",
+                        "couleur": "#FFED00"
+                      }
+                    },
+                    "ressources": {
+                      "_T": 24,
+                      "V": [
+                        {
+                          "L": "DUPONT",
+                          "N": "50#CK8iA79U3IZGsCGG6g_zs7_WsxWZjkRJiw7udtvR4JM",
+                          "G": 0
+                        },
+                        {
+                          "L": "LALANDE",
+                          "N": "50#NjSdWkJk524fson0jbqPczhmFeGiXedQsLlKp4eHRCQ",
+                          "G": 0
+                        }
+                      ]
+                    },
+                    "publication": true,
+                    "publiable": true,
+                    "avecHPassage": true,
+                    "typeGenreHeureConvocation": 1,
+                    "heureConvocation": 0,
+                    "dureeParEleve": 0.0104166666666667,
+                    "pauseInterOral": 0.0416666666666667,
+                    "estMultiOral": true,
+                    "typeRepartition": 1,
+                    "personnalise": true,
+                    "etatValide": true
+                  },
+                  {
+                    "N": "33#974SOM1WmzIoCpFdKHqOhh71-SuZ3mp9uECn2FFnzgM",
+                    "matiere": {
+                      "_T": 24,
+                      "V": {
+                        "L": "COMMUNICATION VISUELLE",
+                        "N": "25#7QeyUti9yprbBH2Nw_eKLV1z5cl9DCfAddxkmQ42zuw",
+                        "couleur": "#FFED00"
+                      }
+                    },
+                    "ressources": {
+                      "_T": 24,
+                      "V": []
+                    },
+                    "publication": true,
+                    "publiable": true,
+                    "avecHPassage": true,
+                    "typeGenreHeureConvocation": 1,
+                    "heureConvocation": 0,
+                    "dureeParEleve": 0.0104166666666667,
+                    "pauseInterOral": 0.0416666666666667,
+                    "estMultiOral": true,
+                    "typeRepartition": 1,
+                    "personnalise": true,
+                    "etatValide": true
+                  }
+                ]
+              },
+              "etatValide": true
+            }
+          },
+          "dom": "[4]",
+          "listeC": [
+            {
+              "G": 0,
+              "C": {
+                "L": "ORAUX",
+                "N": "25#ZPJ_4TxGXvcz8h0kyDpfb9EfxLQAfVyK3uBmtoG1ynM",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 1,
+              "C": [
+                {
+                  "L": "LALANDE",
+                  "N": "50#NjSdWkJk524fson0jbqPczhmFeGiXedQsLlKp4eHRCQ",
+                  "P": 12
+                }
+              ]
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "RELATION COMMERCE DIGITAL 2",
+                  "N": "50#Y6rHfh3-K0QZCOWYoRl_7leHYuajd7kqyT4FTHnanwo",
+                  "P": 36,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 5,
+              "C": {}
+            }
+          ],
+          "nbProg": 0,
+          "avecVisio": false
+        },
+        {
+          "N": "10#pwiR9jW-Pzq-Muh4C1m2ocz6gM_oKS-rIKid-i9a6bQ",
+          "G": 4,
+          "p": 34,
+          "d": 6,
+          "e": 3,
+          "co": "#8DE614",
+          "util": true,
+          "nbE": 40,
+          "errO": {
+            "_T": 26,
+            "V": "[1]"
+          },
+          "dom": "[3..8,11..15,20..24,27..33,36..41]",
+          "listeC": [
+            {
+              "G": 0,
+              "C": {
+                "L": "COMMUNICATION VISUELLE",
+                "N": "25#7QeyUti9yprbBH2Nw_eKLV1z5cl9DCfAddxkmQ42zuw",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "DESIGN 1",
+                  "N": "50#ulXM5zHmmkfSwGdO8Us8iGcWomEXJJcGLcdUyeij95Q",
+                  "P": 29,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 3,
+              "C": [
+                {
+                  "L": "Salle 1",
+                  "N": "50#AehX9n-DUOZhFKTZc3Y49hIugN9y_G7p0YuxMp8eVO0",
+                  "P": 176,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 5,
+              "C": {}
+            }
+          ],
+          "nbProg": 0,
+          "avecVisio": false
+        },
+        {
+          "N": "10#PPhoXvz-Rr8JEAZj4rhaGdIxNU4vnwZ4AB-VA8m2ttg",
+          "G": 4,
+          "p": 100,
+          "d": 4,
+          "e": 4,
+          "util": true,
+          "nbE": 40,
+          "dom": "[4]",
+          "listeC": [
+            {
+              "G": 0,
+              "C": {
+                "L": "COMMUNICATION VISUELLE",
+                "N": "25#7QeyUti9yprbBH2Nw_eKLV1z5cl9DCfAddxkmQ42zuw",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 1,
+              "C": [
+                {
+                  "L": "DUPONT",
+                  "N": "50#CK8iA79U3IZGsCGG6g_zs7_WsxWZjkRJiw7udtvR4JM",
+                  "P": 8,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "DESIGN 1",
+                  "N": "50#ulXM5zHmmkfSwGdO8Us8iGcWomEXJJcGLcdUyeij95Q",
+                  "P": 29,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 3,
+              "C": [
+                {
+                  "L": "Salle 1",
+                  "N": "50#AehX9n-DUOZhFKTZc3Y49hIugN9y_G7p0YuxMp8eVO0",
+                  "P": 176,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 7,
+              "C": {
+                "L": "Cours",
+                "N": "60#Ja30_1pt5MC0qltu_TzU4ROqAvaMNSUQG3FjbAYIP0Y",
+                "G": 7,
+                "c": "#144897"
+              }
+            }
+          ],
+          "nbProg": 0,
+          "nbSeances": 1,
+          "frac": 0,
+          "mobile": false
+        }
+      ],
+      "ListeAnnulationsCours": [],
+      "OrdreContenuDuCours": [
+        0,
+        1,
+        13,
+        12,
+        14,
+        15,
+        3,
+        5,
+        11,
+        17
+      ]
+    },
+    "nom": "FonctionEmploiDuTemps",
+    "Signature": {
+      "autorisations": {
+        "AutoriserCreationCours": true,
+        "AutoriserModificationCours": true,
+        "AutoriserModificationMemoCours": true,
+        "AutoriserAnnulationCours": true,
+        "AutoriserSuppressionCours": true,
+        "AutoriserPoseCoursNonPlace": true,
+        "AutoriserReservationSalle": true,
+        "AutoriserCommentaireReservationSalle": true,
+        "autoriserSaisieOral": true,
+        "consulterPonderationCours": true,
+        "autoriserSaisieAbsences": true,
+        "autoriserSaisieMotifsAbsences": true,
+        "autoriserSaisieRetards": true,
+        "autoriserSaisieMotifsRetards": true,
+        "autoriserSaisieDispenses": true,
+        "AutoriserSaisieSousService": true,
+        "AutoriserSaisieCoefficientService": true,
+        "AutoriserSaisieParametresService": true,
+        "AutoriserSaisieDevoirs": true,
+        "AutoriserSaisieNotes": true,
+        "saisirAppreciations": true,
+        "afficherTousLesServices": true,
+        "autoriserSaisieNotesAppreciationsCoordinateur": true,
+        "saisieProgression": true,
+        "TailleMaxPieceJointeProgression": 1048576,
+        "TailleMaxPieceJointe": 5120000,
+        "saisieStage": true,
+        "AutoriserModificationCoordonneesTelephone": true,
+        "AutoriserModificationCoordonneesEmail": true,
+        "AutoriserModificationCoordonneesAutres": true,
+        "AutoriserModificationPhotoPerso": true,
+        "AutoriserEnvoiMail": true,
+        "ConsulterInfosSondages": true,
+        "SaisirInfosSondages": true,
+        "datesSaisieAbsencesAutorisees": [],
+        "AvecCoursAnnules": true
+      },
+      "notifications": {
+        "compteurCentraleNotif": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ListeRessourcesPeda",
+  "session": 7241368,
+  "no": "D808BFF7FCE1D4DA0AC77A053748197D",
+  "dataSec": {
+    "data": {
+      "listeRessPeda": {
+        "_T": 24,
+        "V": [
+          {
+            "L": "ANGLAIS",
+            "N": "25#xLdk-tuj7bIxe_JH1-Wh22zUrGMEwYSEhXZ5Kbx4jPU",
+            "G": 7,
+            "co": "#144897",
+            "estUnDeploiement": true
+          },
+          {
+            "L": "photoshop_reference.pdf",
+            "N": "13#UPIv83C8bnFq5soy5hJTRJ-OOghYLiVGR1-eZswehn0",
+            "G": 10,
+            "genreRessPeda": 0,
+            "strDocument": "photoshop_reference.pdf",
+            "estEditable": false,
+            "matiere": {
+              "_T": 24,
+              "V": {
+                "L": "ANGLAIS",
+                "N": "25#xLdk-tuj7bIxe_JH1-Wh22zUrGMEwYSEhXZ5Kbx4jPU"
+              }
+            },
+            "date": {
+              "_T": 7,
+              "V": "14/09/2026 08:30:00"
+            },
+            "estUnDeploiement": false
+          },
+          {
+            "L": "Programme de Formation.pdf",
+            "N": "13#Um1qVciYSjDclpQomtgEoxk3CcV8Ntn3k4QbkhyHfhw",
+            "G": 10,
+            "genreRessPeda": 0,
+            "strDocument": "Programme de Formation.pdf",
+            "estEditable": false,
+            "matiere": {
+              "_T": 24,
+              "V": {
+                "L": "ANGLAIS",
+                "N": "25#xLdk-tuj7bIxe_JH1-Wh22zUrGMEwYSEhXZ5Kbx4jPU"
+              }
+            },
+            "date": {
+              "_T": 7,
+              "V": "31/08/2026 08:30:00"
+            },
+            "estUnDeploiement": false
+          },
+          {
+            "L": "MARKETING DIGITAL",
+            "N": "25#1LCbg92z9TpF8dOdemACHmuFFCxh-WYlKRbNNbE4eKU",
+            "G": 7,
+            "co": "#4FD12E",
+            "estUnDeploiement": true
+          },
+          {
+            "L": "TABLEAU COMPARATIF OWNED.pdf",
+            "N": "13#mit5gNG4mHIoALXkxz32LEO86wzMli28Ivt_fC8DnW8",
+            "G": 10,
+            "genreRessPeda": 0,
+            "strDocument": "TABLEAU COMPARATIF OWNED.pdf",
+            "estEditable": false,
+            "matiere": {
+              "_T": 24,
+              "V": {
+                "L": "MARKETING DIGITAL",
+                "N": "25#1LCbg92z9TpF8dOdemACHmuFFCxh-WYlKRbNNbE4eKU"
+              }
+            },
+            "date": {
+              "_T": 7,
+              "V": "14/09/2026 15:30:00"
+            },
+            "estUnDeploiement": false
+          }
+        ]
+      }
+    },
+    "nom": "ListeRessourcesPeda"
+  }
+}

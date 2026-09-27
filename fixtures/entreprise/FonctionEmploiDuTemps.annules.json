@@ -1,0 +1,183 @@
+{
+  "id": "FonctionEmploiDuTemps",
+  "session": 1996744,
+  "no": "9D175336585CA0005760C537157FA65C",
+  "dataSec": {
+    "data": {
+      "ListeCours": [],
+      "ListeAnnulationsCours": [
+        {
+          "N": "3#YQDrG34eHbuyJFkWe9Gc23ZT2j0LgTJYfEvI8C3jXZw",
+          "G": 4,
+          "motif": "Annulation",
+          "p": 35,
+          "d": 4,
+          "couleur": "#ED6566",
+          "domaine": "[4]",
+          "listeContenus": [
+            {
+              "G": 9,
+              "C": "15h30 - 17h30"
+            },
+            {
+              "G": 0,
+              "C": {
+                "L": "C.E.J.M.",
+                "N": "25#Yk2XNWxEls4eMmKqYozV0ZM2bq2qGa-l6A6NR4hmHwk",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 1,
+              "C": [
+                {
+                  "L": "LUNEL",
+                  "N": "50#Vk0c45f3Qs8crKL6w8ef-B4D3i2_aCDwwtmBLOEmXmk",
+                  "P": 15,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#WHswv1wCN-BSCXpnlG4RjPqIqWJAYaIomil2F_v05O4",
+                  "P": 35,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 3,
+              "C": [
+                {
+                  "L": "Salle C",
+                  "N": "50#vSXl3uPz568Lf5fc8nItl59q3qrIWeKDsVKt0Ee4dMs",
+                  "P": 182,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 4,
+              "C": "60/60"
+            },
+            {
+              "G": 5,
+              "C": {}
+            },
+            {
+              "G": 7,
+              "C": {
+                "L": "Cours",
+                "N": "60#qnYg3aMnFf7ZKlreEsToLEfTrrVvmNQxOSsoWfIKIeo",
+                "G": 7,
+                "c": "#144897"
+              }
+            }
+          ],
+          "estRemunere": false,
+          "commentaire": ""
+        },
+        {
+          "N": "3#yEuZz_U534FqV3qzVXkNVbjvGliBpTHzAFGZ14zXcVs",
+          "G": 5,
+          "motif": "Annulation",
+          "lienRattrapage": "R",
+          "lienRattrapageHint": "Séance annulée - rattrapée le mar. 29/09/2026 13h30",
+          "p": 21,
+          "d": 4,
+          "couleur": "#ED6566",
+          "domaine": "[5]",
+          "listeContenus": [
+            {
+              "G": 9,
+              "C": "08h30 - 10h30"
+            },
+            {
+              "G": 0,
+              "C": {
+                "L": "C.E.J.M.",
+                "N": "25#Yk2XNWxEls4eMmKqYozV0ZM2bq2qGa-l6A6NR4hmHwk",
+                "G": 0,
+                "p": true
+              }
+            },
+            {
+              "G": 1,
+              "C": [
+                {
+                  "L": "LUNEL",
+                  "N": "50#Vk0c45f3Qs8crKL6w8ef-B4D3i2_aCDwwtmBLOEmXmk",
+                  "P": 15,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 13,
+              "C": [
+                {
+                  "L": "RELATION COMMERCE DIGITAL 1",
+                  "N": "50#WHswv1wCN-BSCXpnlG4RjPqIqWJAYaIomil2F_v05O4",
+                  "P": 35,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 3,
+              "C": [
+                {
+                  "L": "Salle 4",
+                  "N": "50#sltdwVtEPwWw8XziNBl5cEW3YdwnB7TCBsyRcvlRmdA",
+                  "P": 179,
+                  "p": true
+                }
+              ]
+            },
+            {
+              "G": 4,
+              "C": "60/60"
+            },
+            {
+              "G": 5,
+              "C": {}
+            },
+            {
+              "G": 7,
+              "C": {
+                "L": "Cours",
+                "N": "60#qnYg3aMnFf7ZKlreEsToLEfTrrVvmNQxOSsoWfIKIeo",
+                "G": 7,
+                "c": "#144897"
+              }
+            }
+          ],
+          "estRemunere": false,
+          "strRattrapage": "mar. 29/09/2026 13h30",
+          "commentaire": ""
+        }
+      ],
+      "OrdreContenuDuCours": [
+        9,
+        0,
+        1,
+        13,
+        12,
+        14,
+        15,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ]
+    },
+    "nom": "FonctionEmploiDuTemps"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "PageInfoSondage",
+  "session": 6850553,
+  "no": "F701DB151325DEAAC0CCA07D267E712A",
+  "dataSec": {
+    "data": {
+      "listeModesAff": [
+        {
+          "G": 0,
+          "listeActualites": {
+            "_T": 24,
+            "V": []
+          }
+        }
+      ]
+    },
+    "nom": "PageInfoSondage"
+  }
+}
