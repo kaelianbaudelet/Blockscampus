@@ -78,10 +78,9 @@ PRONOTE Campus (formerly HYPERPLANNING) shares the transport of PRONOTE (`appelf
 - **No dates in courses**: a course is `{ G: week, p: place, d: duration }`. The date is `PremierLundi + (G - 1) weeks + JoursOuvres[p / PlacesParJour]`, the hours come from `Horaire.ListeHeures` (see `Schedule`). Absences use the same encoding (`SD/PD`, `SF/PF`).
 - **Files**: `FichiersExternes/<AES(JSON({ N, G? }))>/<name>?Session=<id>`.
 
-### Reverse-engineering tools
-- `bun scripts/capture.ts <etudiant|parent|entreprise|enseignant>` logs into the demo (credentials read from `../identifiants.pronote-campus.txt`) and dumps every answer into a local, git-ignored `fixtures/<space>/` folder.
-- `bun scripts/probe.ts <space> <user> <password> [calls.json]` calls arbitrary functions.
+### Tests
 - `bun test` runs the offline unit tests (parser, schedule, challenge).
+- `bun scripts/smoke.ts [etudiant|parent|entreprise|enseignant]` checks every feature against the demo instance.
 
 ## Installation
 [Bun](https://bun.sh) is recommended for its faster startup time, built-in TypeScript support, and improved performance when handling cryptographic operations and data compression, while remaining fully compatible with Node.js.

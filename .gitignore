@@ -142,5 +142,9 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
 
-# Answers captured from the demo by scripts/capture.ts (local only)
+# Local reverse-engineering tools and captured answers
 fixtures/
+scripts/probe.ts
+scripts/capture.ts
+scripts/shape.py
+scripts/calls/
