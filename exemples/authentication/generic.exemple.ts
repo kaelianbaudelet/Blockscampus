@@ -29,7 +29,7 @@ async function main(): Promise<User> {
 
 export async function askForCredentials(authenticator: Authenticator, defaultUsername = "AUDIBERT") {
   const username = await input({ message: "Username:", required: true, default: defaultUsername })
-  const pwd = await password({ message: "Password (demodemo on the demo):", mask: "*" })
+  const pwd = await password({ message: "Password (demodemo on the demo):", mask: "*", validate: (p) => p.length > 0 || "The password is required" })
   await authenticator.credentials(username, pwd)
 
   const security = authenticator.security;

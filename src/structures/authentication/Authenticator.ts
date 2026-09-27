@@ -69,7 +69,10 @@ export class Authenticator {
 
     if (!response.cle) {
       throw new AuthenticationError(
-        response.AccesMessage ?? "Unable to find the AES Key, please ensure that you provided the correct credentials."
+        response.AccesMessage
+        ?? (response.Acces === 1
+          ? "Invalid username or password."
+          : "Unable to find the AES Key, please ensure that you provided the correct credentials.")
       );
     }
 
