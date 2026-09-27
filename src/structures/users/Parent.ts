@@ -1,31 +1,37 @@
-import type { TimetableOptions } from "@/types/timetable";
-import type { Instance } from "@/structures/Instance";
-import { Timetable } from "@/routes/PageEmploiDuTemps/Common";
-import { ParentUserSettings } from "@/routes/ParametresUtilisateurs/Parent";
-import type { StudentUserSettings } from "@/routes/ParametresUtilisateurs/Student";
-import type { Session } from "@/structures/Session";
-import type { Settings } from "@/structures/Settings";
-import { User } from "@/structures/users/User";
-import { Homework } from "@/routes/PageCahierDeTexte/Common";
-import { Parser } from "../parsing/Parser";
+import { StudentLike } from "@/structures/users/Student";
+import type { Member } from "@/types/user";
 
-export class Parent extends User {
-  declare public user: ParentUserSettings;
-
-  public static override async load(
-    session: Session,
-    settings: Settings,
-    instance: Instance
-  ): Promise<Parent> {
-    const user = await ParentUserSettings.load<ParentUserSettings>(session, settings);
-    return new this(session, user, instance, settings);
+/**
+ * Account consulting one or several students (parents, companies).
+ * Every request is made on behalf of the selected member (`membre` of the signature).
+ */
+export class MemberAccount extends StudentLike {
+  public get members(): Member[] {
+    return (this.authentication.Utilisateur?.listeMembres ?? []).map((m) => ({
+      id:         m.id,
+      kind:       m.G,
+      name:       m.label,
+      promotions: m.ListeRessources ?? []
+    }));
   }
 
-  public timetable(children: StudentUserSettings, options?: TimetableOptions): Promise<Timetable> {
-    return super._timetable(children, options);
+  public get member(): Member | undefined {
+    const id = this.session.member?.N;
+    return this.members.find((m) => m.id === id);
   }
 
-  public homeworks(children: StudentUserSettings, from?: Date, to?: Date): Promise<Array<Homework>> {
-    return Homework.load(this, from, to, Parser.toRessource(children));
+  /** Selects the student to consult. The first one is selected by default. */
+  public selectMember(member: Member): this {
+    this.session.member = { N: member.id, G: member.kind, L: member.name };
+    return this;
+  }
+
+  /** @internal */
+  public selectDefaultMember(): this {
+    const first = this.members[0];
+    if (first && !this.session.member) this.selectMember(first);
+    return this;
   }
 }
+
+export class Parent extends MemberAccount {}

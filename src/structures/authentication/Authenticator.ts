@@ -1,21 +1,20 @@
 import { utf8ToBytes } from "@noble/hashes/utils.js";
-import type { Workspace } from "../../types/authentication";
-import type { AuthentificationResponse } from "../../types/responses/authentication";
-import { Challenge } from "../Challenge";
-import { AuthenticationError } from "../errors/AuthenticationError";
-import type { Instance } from "../Instance";
-import { Request } from "../../structures/network/Request";
-import { Session } from "../Session";
-import { Settings } from "../Settings";
-import { AccountSecurity } from "./AccountSecurity";
-import { User } from "../users/User";
+import type { Workspace } from "@/types/authentication";
+import type { AuthentificationResponse } from "@/types/responses/authentication";
+import { Challenge } from "@/structures/Challenge";
+import { AuthenticationError } from "@/structures/errors/AuthenticationError";
+import type { Instance } from "@/structures/Instance";
+import { Session } from "@/structures/Session";
+import { Settings } from "@/structures/Settings";
+import { AccountSecurity } from "@/structures/authentication/AccountSecurity";
+import { User } from "@/structures/users/User";
 
 export class Authenticator {
   public workspace?: Workspace;
 
   protected session?: Session;
 
-  private raw?: AuthentificationResponse;
+  protected raw?: AuthentificationResponse;
 
   protected settings?: Settings;
 
@@ -26,11 +25,11 @@ export class Authenticator {
   ){}
 
   protected async validate() {
-    if (!this.settings || !this.session) {
+    if (!this.settings || !this.session || !this.raw) {
       throw new AuthenticationError("Unable to finalize the authentication.")
     }
     await this.security.execute()
-    return { session: this.session, settings: this.settings }
+    return { session: this.session, settings: this.settings, raw: this.raw }
   }
 
   public useWorkspace(workspace: Workspace) {
@@ -47,32 +46,46 @@ export class Authenticator {
     this.settings = await Settings.load(this.session);
     const challenge = await Challenge.request(this.session, username);
 
-    await this.authenticate(this.session, challenge, password);
+    await this.authenticate(this.session, challenge, username, password);
   }
 
-  private async authenticate(session: Session, challenge: Challenge, password: string) {
+  private async authenticate(session: Session, challenge: Challenge, username: string, password: string) {
     const tempKey = challenge.generateTempKey(password);
     const solution = challenge.solve(session, password);
 
-    const _request = new Request()
-      .setPronotePayload(
-        session,
-        "Authentification",
-        {
-          challenge: solution,
-          connexion: 0,
-          espace:    session.workspace.type
-        }
-      )
-    const _response = (await session.manager.enqueueRequest<AuthentificationResponse>(_request)).data;
-    if (!_response.cle) throw new AuthenticationError("Unable to find the AES Key, please ensure that you provided the correct credentials.")
+    const response = await session.call<AuthentificationResponse>("Authentification", undefined, {
+      genreConnexion:                   0,
+      identifiant:                      username,
+      pourENT:                          false,
+      enConnexionAuto:                  false,
+      demandeConnexionAuto:             false,
+      enConnexionAppliMobile:           false,
+      demandeConnexionAppliMobile:      false,
+      demandeConnexionAppliMobileJeton: false,
+      uuidAppliMobile:                  "",
+      loginTokenSAV:                    "",
+      challenge:                        solution
+    });
+
+    if (!response.cle) {
+      throw new AuthenticationError(
+        response.AccesMessage
+        ?? (response.Acces === 1
+          ? "Invalid username or password."
+          : "Unable to find the AES Key, please ensure that you provided the correct credentials.")
+      );
+    }
 
     session.aes.updateKey(utf8ToBytes(tempKey));
-    const _decryptedKey = session.aes.decrypt(_response.cle);
-    const finalKey = new Uint8Array(_decryptedKey.split(",").map(Number));
-    session.aes.updateKey(finalKey);
+    const decryptedKey = session.aes.decrypt(response.cle);
+    session.aes.updateKey(new Uint8Array(decryptedKey.split(",").map(Number)));
 
-    this.raw = _response;
+    const user = response.Utilisateur;
+    if (user) {
+      session.user = { N: user.id, G: user.G, L: user.label };
+    }
+
+    this.raw = response;
   }
 
   public get security(): AccountSecurity {
@@ -81,7 +94,7 @@ export class Authenticator {
   }
 
   public async finalize(): Promise<User> {
-    const { session, settings } = await this.validate()
-    return User.load(session, settings, this.instance)
+    const { session, settings, raw } = await this.validate()
+    return User.load(session, settings, this.instance, raw)
   }
 }

@@ -1,151 +1,97 @@
 import { randomBytes } from "@noble/hashes/utils.js";
 import type {
-  EnvironmentSettings,
-  EvaluationSettings,
+  FeatureSettings,
   GradingSettings,
   Language,
-  Period,
-  InstancePermissions,
-  PublicationSettings,
-  Ressources,
+  LinksSettings,
   ScheduleSettings,
   SchoolInfo
 } from "@/types/instance";
 import type { Session } from "@/structures/Session";
 import { RSA } from "@/structures/crypto/RSA";
-import { Request } from "@/structures/network/Request";
-import type { FonctionsParametresRawResponse } from "@/types/responses/instance";
+import type { FonctionParametresResponse } from "@/types/responses/instance";
 
+/** Instance-wide settings returned by `FonctionParametres`. */
 export class Settings {
   constructor(
     public productName: string,
-    public version: number[],
+    public version: string,
     public isDemo: boolean,
     public school: SchoolInfo,
-    public schoolYear: number[],
-    public publication: PublicationSettings,
+    public schoolYear: number,
+    public serverDate: Date,
     public grading: GradingSettings,
     public availableLanguages: Language[],
     public currentLanguage: Language,
-    public environment: EnvironmentSettings,
     public schedule: ScheduleSettings,
-    public evaluation: EvaluationSettings,
-    public permissions: InstancePermissions,
-    public ressources?: Ressources,
-    public periods?: Period[]
+    public features: FeatureSettings,
+    public links: LinksSettings,
+    public raw: FonctionParametresResponse
   ) {}
 
   public static async load(session: Session): Promise<Settings> {
     const nextIv = randomBytes(16);
     const uuid = session.useHttps ? Buffer.from(nextIv).toString("base64") : RSA.encrypt1024(nextIv);
 
-    const request = new Request()
-      .setPronotePayload(session, "FonctionParametres", {
-        Uuid:           uuid,
-        identifiantNav: null
-      });
+    const response = await session.call<FonctionParametresResponse>("FonctionParametres", undefined, {
+      Uuid:           uuid,
+      identifiantNav: null
+    });
     session.aes.updateIv(nextIv);
 
-    const response = (await session.manager.enqueueRequest<FonctionsParametresRawResponse>(request))
-      .data;
-      console.log(response);
+    return Settings.fromResponse(session, response);
+  }
 
-    const g = response.General;
-    const languages: Language[] = g.listeLangues.map((l) => (
-      { id: l.langID, label: l.description }
-    ));
-    const currentLang = languages.find((l) => l.id === +g.langID) ?? languages[0];
+  public static fromResponse(session: Session, response: FonctionParametresResponse): Settings {
+    const g = response.parametreGeneral;
+    const languages: Language[] = g.listeLangues.map((l) => ({ id: l.langID, label: l.description }));
+    const currentLanguage = languages.find((l) => l.id === g.langID) ?? languages[0] ?? { id: g.langID, label: g.langue };
+    const version = g.Version.replace(/^\D+/, "");
+    const schoolName = response.parametres.Divers?.find((d) => d.NomEtablissement)?.NomEtablissement ?? "";
+    const absolute = (path?: string) => (path ? new URL(path, session.source).toString() : undefined);
 
     return new Settings(
-      g.nomProduit,
-      response.tableauVersion,
-      !!response.DateDemo,
+      g.Version.replace(version, "").trim(),
+      version,
+      response.dateDemo !== undefined,
+      { name: schoolName, logoUrl: absolute(g.urlLogo) },
+      Number(g.millesime),
+      g.Jour,
       {
-        longName:  g.NomEtablissementConnexion,
-        shortName: g.NomEtablissement,
-        logoUrl:   g.urlLogo
-      },
-      g.AnneeScolaire.split("-").map(Number),
-      {
-        defaultDelayDays:           g.NbJDecalageDatePublicationParDefaut,
-        parentDelayDays:            g.NbJDecalagePublicationAuxParents,
-        hasDelayedEvalPublication:  g.AvecAffichageDecalagePublicationEvalsAuxParents,
-        hasDelayedGradePublication: g.AvecAffichageDecalagePublicationNotesAuxParents
-      },
-      {
-        scale:    g.BaremeNotation,
-        maxGrade: g.BaremeMaxDevoirs
+        scale:     g.baremeNotation,
+        maxGrade:  g.baremeMaxDevoirs,
+        decimals:  Math.log10(g.precisionNotation || 1),
+        threshold: g.seuilNotation
       },
       languages,
-      currentLang!,
+      currentLanguage,
       {
-        serverDate:               new Date(response.DateServeurHttp),
-        isShowedInENT:            response.estAfficheDansENT,
-        isAccessibilityCompliant: !!g.accessibiliteNonConforme,
-        isForNewCaledonia:        response.pourNouvelleCaledonie,
-        isHostedInFrance:         g.estHebergeEnFrance
+        firstMonday:   g.PremierLundi,
+        lastDate:      g.DerniereDate,
+        openDays:      g.JoursOuvres,
+        placesPerDay:  g.PlacesParJour,
+        placesPerHour: g.PlacesParHeure,
+        unplaced:      g.NonPlace
       },
       {
-        seatsPerDay:           g.PlacesParJour,
-        seatsPerHour:          g.PlacesParHeure,
-        sequenceDuration:      g.DureeSequence,
-        hasFullAfternoonHours: g.AvecHeuresPleinesApresMidi,
-        nextOpenDay:           new Date(g.JourOuvre),
-        openDaysPerCycle:      g.joursOuvresParCycle,
-        firstWeek:             g.premierJourSemaine,
-        firstMonday:           new Date(g.PremierLundi),
-        firstDate:             new Date(g.PremiereDate),
-        lastDate:              new Date(g.DerniereDate),
-        recreations:           g.recreations.map((r) => ({ seat: r.place, label: r.label })),
-        publicHolidays:        g.listeJoursFeries.map((j) => ({
-          label: j.label,
-          from:  new Date(j.dateDebut),
-          to:    new Date(j.dateFin)
-        }))
+        mcq:         g.AvecGestionQCM,
+        students:    g.AvecGestionEtudiants,
+        parents:     g.AvecGestionParents,
+        internships: g.AvecGestionStages,
+        workStudy:   g.AvecGestionAlternances,
+        forum:       g.avecForum
       },
       {
-        acquisitionLevels: g.ListeNiveauxDAcquisitions.map((l) => ({
-          label:                          l.label,
-          abbreviation:                   l.abbreviation,
-          color:                          l.couleur,
-          weight:                         l.positionJauge,
-          isAcquired:                     l.estAcqui,
-          countForSuccessRateCalculation: l.estNotantPourTxReussite,
-          pointsForBrevet:                l.nombrePointsBrevet
-        })),
-        hasEvaluationHistory: g.AvecEvaluationHistorique,
-        qcm:                  {
-          minScore:  g.minBaremeQuestionQCM,
-          maxScore:  g.maxBaremeQuestionQCM,
-          maxPoints: g.maxNbPointQCM,
-          maxLevel:  g.maxNiveauQCM
-        }
-      },
-      {
-        parentCanChangePassword:              g.parentAutoriseChangerMDP,
-        allowConnectionInfoRecovery:          g.AvecRecuperationInfosConnexion,
-        isBlogEnabled:                        g.activerBlog,
-        isForumEnabled:                       g.avecForum,
-        isParentMessagingEnabled:             g.ActivationMessagerieEntreParents,
-        isExcellencePathwayManagementEnabled: g.GestionParcoursExcellence
-      },
-      {
-        confidentialityPolicy:    response.urlConfidentialite,
+        help:                     g.UrlAide,
         indexEducationWebsite:    g.urlSiteIndexEducation,
-        hostingInfo:              g.urlSiteInfosHebergement,
-        support:                  g.UrlAide,
+        hostingInfo:              g.urlInfosHebergement,
+        privacyPolicy:            g.urlPolitiqueConfidentialite,
         faqTwoFactorRegistration: g.urlFAQEnregistrementDoubleAuth,
         securityTutorialVideo:    g.urlTutoVideoSecurite,
         registerDevicesTutorial:  g.urlTutoEnregistrerAppareils,
-        canope:                   g.urlCanope,
-        accessibilityDeclaration: session.source + g.urlDeclarationAccessibilite
+        accessibilityDeclaration: absolute(g.urlDeclarationAccessibilite)
       },
-      g.ListePeriodes.map((period) => ({
-        label:     period.label,
-        startDate: period.dateDebut,
-        endDate:   period.dateFin,
-        id:        period.id
-      }))
-    )
+      response
+    );
   }
 }

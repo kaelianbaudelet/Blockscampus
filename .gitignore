@@ -141,3 +141,6 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Answers captured from the demo by scripts/capture.ts (local only)
+fixtures/

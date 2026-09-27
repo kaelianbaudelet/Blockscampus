@@ -1,5 +1,4 @@
 import type { Session } from "@/structures/Session";
-import { Request } from "@/structures/network/Request";
 import type { IdentificationResponse } from "@/types/responses/authentication";
 import { bytesToHex, utf8ToBytes } from "@noble/hashes/utils.js";
 import { sha256 } from "@noble/hashes/sha2.js";
@@ -9,59 +8,64 @@ export class Challenge {
   constructor(
     public username: string,
     private challenge: string,
-    private seed: string
+    private seed: string,
+    private lowercaseUsername: boolean,
+    private lowercasePassword: boolean
   ){}
 
-  static async request(session: Session, username: string) {
-    const request = new Request().setPronotePayload(session, "Identification", {
-      demandeConnexionAppliMobile:      false,
-      demandeConnexionAppliMobileJeton: false,
-      demandeConnexionAuto:             false,
-      enConnexionAppliMobile:           false,
-      enConnexionAuto:                  false,
+  static async request(session: Session, username: string): Promise<Challenge> {
+    const response = await session.call<IdentificationResponse>("Identification", undefined, {
       genreConnexion:                   0,
       genreEspace:                      session.workspace.type,
       identifiant:                      username,
-      informationsAppareil:             null,
-      loginTokenSAV:                    "",
       pourENT:                          false,
-      uuidAppliMobile:                  ""
+      enConnexionAuto:                  false,
+      demandeConnexionAuto:             false,
+      demandeConnexionAppliMobile:      false,
+      demandeConnexionAppliMobileJeton: false,
+      enConnexionAppliMobile:           false,
+      uuidAppliMobile:                  "",
+      loginTokenSAV:                    ""
     });
 
-    const response = (await session.manager.enqueueRequest<IdentificationResponse>(request)).data;
-    return new Challenge(username, response.challenge, response.alea ?? "")
+    if (!response.challenge) {
+      throw new AuthenticationError("Unable to retrieve the authentication challenge.");
+    }
+
+    return new Challenge(
+      username,
+      response.challenge,
+      response.alea ?? "",
+      Boolean(response.modeCompLog),
+      Boolean(response.modeCompMdp)
+    );
   }
 
+  /**
+   * Unlike PRONOTE, PRONOTE Campus does not expect the challenge to be decrypted:
+   * the raw challenge is simply encrypted with the temporary key.
+   */
   public solve(session: Session, password: string): string {
     try {
-      const tempKey = this.generateTempKey(password);
-      session.aes.updateKey(tempKey);
-
-      //const decrypted = session.aes.decrypt(this.challenge);
-      //const decoded = this.decode(decrypted);
-      const encrypted = session.aes.encrypt(this.challenge);
-
-      session.aes.resetKey();
-      return encrypted;
+      session.aes.updateKey(this.generateTempKey(password));
+      return session.aes.encrypt(this.challenge);
     } catch {
-      throw new AuthenticationError("Unable to solve the challenge, please ensure that you provided the correct credentials.")
+      throw new AuthenticationError("Unable to solve the challenge, please ensure that you provided the correct credentials.");
+    } finally {
+      session.aes.resetKey();
     }
   }
 
-  private decode(challenge: string): string {
-    return challenge
-      .split("")
-      .filter((_, i) => i % 2 === 0)
-      .join("");
-  }
-
+  /** `login + SHA256(alea + password)`, following the case rules sent by the server. */
   public generateTempKey(password: string): string {
+    const login = this.lowercaseUsername ? this.username.toLowerCase() : this.username;
+    const pwd = this.lowercasePassword ? password.toLowerCase() : password;
     const hash = sha256
       .create()
-      .update(utf8ToBytes(this.seed ?? ""))
-      .update(utf8ToBytes(password.trim()))
+      .update(utf8ToBytes(this.seed))
+      .update(utf8ToBytes(pwd.trim()))
       .digest();
 
-    return `${this.username.toLowerCase()}${bytesToHex(hash).toUpperCase()}`;
+    return `${login}${bytesToHex(hash).toUpperCase()}`;
   }
 }

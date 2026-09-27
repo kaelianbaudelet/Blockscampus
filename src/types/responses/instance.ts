@@ -1,110 +1,95 @@
+import type { HPElement } from "./common";
 
-export type OldFonctionsParametresRawResponse = {
-  identifiantNav:        string;
-  estAfficheDansENT:     boolean;
-  pourNouvelleCaledonie: boolean;
-  tableauVersion:        number[];
-  urlConfidentialite:    string;
-  DateServeurHttp:       string;
-  DateDemo:              string;
-  General: {
-    urlSiteIndexEducation:                           string;
-    urlSiteInfosHebergement:                         string;
-    nomProduit:                                      string;
-    langue:                                          string;
-    langID:                                          string;
-    listeLangues:                                    Array<{ langID: number; description: string }>;
-    estHebergeEnFrance:                              boolean;
-    avecForum:                                       boolean;
-    UrlAide:                                         string;
-    urlAccesVideos:                                  string;
-    urlAccesTwitter:                                 string;
-    urlFAQEnregistrementDoubleAuth:                  string;
-    urlTutoVideoSecurite:                            string;
-    urlTutoEnregistrerAppareils:                     string;
-    urlCanope:                                       string;
-    accessibiliteNonConforme:                        boolean;
-    urlDeclarationAccessibilite:                     string;
-    NomEtablissement:                                string;
-    NomEtablissementConnexion:                       string;
-    numeroPremiereSemaine:                           number;
-    AnneeScolaire:                                   string;
-    dateDebutPremierCycle:                           string;
-    PremierLundi:                                    string;
-    PremiereDate:                                    string;
-    DerniereDate:                                    string;
-    PlacesParJour:                                   number;
-    PlacesParHeure:                                  number;
-    DureeSequence:                                   number;
-    PlaceDemiJourneeAbsence:                         number;
-    valeurDefautPresenceDispense:                    boolean;
-    activationDemiPension:                           boolean;
-    JourOuvre:                                       string;
-    JoursOuvres:                                     number[];
-    ActivationMessagerieEntreParents:                boolean;
-    GestionParcoursExcellence:                       boolean;
-    activerBlog:                                     boolean;
-    joursOuvresParCycle:                             number;
-    premierJourSemaine:                              number;
-    DomainesFrequences:                              number[];
-    LibellesFrequences:                              string[];
-    BaremeNotation:                                  number;
-    BaremeMaxDevoirs:                                number;
-    AvecHeuresPleinesApresMidi:                      boolean;
-    NbJDecalageDatePublicationParDefaut:             number;
-    NbJDecalagePublicationAuxParents:                number;
-    AvecAffichageDecalagePublicationNotesAuxParents: boolean;
-    AvecAffichageDecalagePublicationEvalsAuxParents: boolean;
-    ListeNiveauxDAcquisitions:                       rawSkillLevel[];
-    AvecEvaluationHistorique:                        boolean;
-    minBaremeQuestionQCM:                            number;
-    maxBaremeQuestionQCM:                            number;
-    maxNbPointQCM:                                   number;
-    maxNiveauQCM:                                    number;
-    AvecRecuperationInfosConnexion:                  boolean;
-    parentAutoriseChangerMDP:                        boolean;
-    listeJoursFeries: Array<{
-      label:     string;
-      dateDebut: Date;
-      dateFin:   Date;
-    }>;
-    ListePeriodes: Array<{
-      periodeNotation: number;
-      dateDebut:       Date;
-      dateFin:         Date;
-      label:           string;
-      id:              string;
-    }>;
-    urlLogo:                              string;
-    recreations:                          Array<{ place: number; label: string }>;
-    tailleMaxEnregistrementAudioRenduTAF: number;
-  };
-}
+/** Answer of `FonctionParametres` (instance-wide settings, sent before authentication). */
+export type FonctionParametresResponse = {
+  identifiantNav?:   string;
+  parametreGeneral:  HPGeneralSettings;
+  parametres:        HPSpaceSettings;
+  themeCouleur?:     number;
+  /** Only set on demonstration instances. */
+  dateDemo?:         Date;
+  ChallengeBis?:     string;
+  nomCookieAppli?:   string;
+  aideContextuelle?: Record<string, unknown>;
+};
 
-export type FonctionsParametresRawResponse = {
-  
-}
+export type HPGeneralSettings = {
+  AvecEspaceMobile:                        boolean;
+  UrlEspaceMobile?:                        string;
+  urlLogo?:                                string;
+  avecAuthentification:                    boolean;
+  precisionNotation:                       number;
+  baremeNotation:                          number;
+  baremeMoyenneGeneraleAnnuelle?:          number;
+  baremeMaxDevoirs:                        number;
+  seuilNotation?:                          number;
+  surplusBareme?:                          number;
+  AvecGestionQCM:                          boolean;
+  AvecGestionEtudiants:                    boolean;
+  AvecGestionParents:                      boolean;
+  AvecGestionStages:                       boolean;
+  AvecGestionAlternances:                  boolean;
+  afficherAbbreviationNiveauDAcquisition?: boolean;
+  avecGestionEchelleNotation?:             boolean;
+  accesSignatureNumerique?:                boolean;
+  avecSmtpConfigure?:                      boolean;
+  avecForum:                               boolean;
+  AvecAide?:                               boolean;
+  UrlAide?:                                string;
+  urlSiteIndexEducation?:                  string;
+  urlInfosHebergement?:                    string;
+  accessibiliteNonConforme?:               boolean;
+  urlDeclarationAccessibilite?:            string;
+  urlPolitiqueConfidentialite?:            string;
+  UrlVersion?:                             string;
+  urlFAQEnregistrementDoubleAuth?:         string;
+  urlTutoVideoSecurite?:                   string;
+  urlTutoEnregistrerAppareils?:            string;
+  /** e.g. "PRONOTE Campus 2026.4.7.2" */
+  Version:                                 string;
+  millesime:                               string;
+  /** Current day on the server. */
+  Jour:                                    Date;
+  /** Place value used for courses without a position in the grid. */
+  NonPlace:                                number;
+  AvecSite?:                               boolean;
+  AvecFamilleDeSalle?:                     boolean;
+  /** Monday of the first week (week/cycle 1). */
+  PremierLundi:                            Date;
+  DerniereDate:                            Date;
+  /** Working days, 1 = Monday. */
+  JoursOuvres:                             number[];
+  PeriodeCloturee?:                        number[];
+  NombreJoursOuvres:                       number;
+  SemainesFeriees?:                        number[];
+  JoursFeries?:                            number[];
+  PlacesParHeure:                          number;
+  PlacesParJour:                           number;
+  /** Duration of a sequence, in days. */
+  DureeSequence:                           number;
+  DebPauseDejeune?:                        number;
+  FinPauseDejeune?:                        number;
+  RessourcesAvecDP?:                       number[];
+  AvecGestionPhotos?:                      boolean;
+  nombreContenusMax?:                      number;
+  minBaremeQuestionQCM?:                   number;
+  maxBaremeQuestionQCM?:                   number;
+  maxNbPointQCM?:                          number;
+  maxNiveauQCM?:                           number;
+  AvecRecuperationInfosConnexion?:         boolean;
+  estHebergeEnFrance?:                     boolean;
+  listeAnnotationsAutorisees?:             number[];
+  langue:                                  string;
+  langID:                                  number;
+  listeLangues:                            { langID: number; description: string }[];
+  ListeSalles?:                            HPElement[];
+};
 
-interface rawSkillLevel {
-  G:                    number;
-  P:                    number;
-  listePositionnements: Array<{
-    G:                        number;
-    abbreviation:             string;
-    abbreviationAvecPrefixe?: string;
-    label:                    string;
-  }>;
-  positionJauge:            number;
-  actifPour:                number[];
-  abbreviation:             string;
-  raccourci:                string;
-  raccourciPositionnement:  string;
-  label:                    string;
-  id:                       number;
-  couleur?:                 string;
-  ponderation?:             string;
-  nombrePointsBrevet?:      number;
-  estAcqui?:                boolean;
-  estNonAcqui?:             boolean;
-  estNotantPourTxReussite?: boolean;
-}
+export type HPSpaceSettings = {
+  Divers?:          Array<{ G: number; NomEtablissement?: string; BloquerReferencementEspacesDansMoteurRecherche?: boolean }>;
+  Espace?:          Array<Record<string, unknown> & { G: number; EnteteNom?: string }>;
+  MentionsLegales?: Array<Record<string, unknown> & { G: number }>;
+  Personnel?:       Array<Record<string, unknown> & { G: number }>;
+  PlanningGeneral?: Array<{ G: number; NumeroPremiereSemaine?: number }>;
+  Ressource?:       Array<Record<string, unknown> & { G: number }>;
+};

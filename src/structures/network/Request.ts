@@ -9,6 +9,7 @@ import { bytesToUtf8 } from "@noble/ciphers/utils.js";
 import { Parser } from "@/structures/parsing/Parser.ts";
 import { ParsingError } from "@/structures/errors/ParsingError.ts";
 import { md5 } from "@noble/hashes/legacy.js";
+import { AccessDeniedError } from "@/structures/errors/AccessDeniedError.ts";
 
 export class Request {
   public headers: Record<string, string> = {
@@ -113,20 +114,23 @@ export class Request {
     return data;
   }
 
-  private _processResponse(session: Session, data: string) {
-    let processed = JSON.parse(data).dataSec;
-    const isError = Boolean(JSON.parse(data).Erreur);
+  private _processResponse(session: Session, raw: Record<string, unknown>) {
+    let processed = raw.dataSec as unknown;
 
-    if (isError) return {};
-    if (!processed) throw new ParsingError(-1, "Unable to parse the JSON returned by PRONOTE");
+    if (raw.Erreur) return {};
+    if (!processed) throw new ParsingError(-1, "Unable to parse the JSON returned by PRONOTE Campus");
 
-    if (session.useEncryption) {
+    if (session.useEncryption && typeof processed === "string") {
       processed = session.aes.decrypt(processed, true)
     }
 
-    if (session.useCompression) {
-      processed = bytesToUtf8(inflateSync(processed));
-      processed = JSON.parse(processed)
+    if (session.useCompression && processed instanceof Uint8Array) {
+      processed = JSON.parse(bytesToUtf8(inflateSync(processed)));
+    }
+
+    const signature = (processed as { Signature?: { MessageErreur?: string } }).Signature;
+    if (signature?.MessageErreur) {
+      throw new AccessDeniedError(signature.MessageErreur);
     }
 
     const parsed = Parser.parse(processed);
@@ -171,16 +175,15 @@ export class Request {
     const text = await response.text();
 
     if (contentType?.includes("json") || this.endpoint.includes("appelfonction")) {
-      if (this.session) {
-        this._processResponse(this.session, text)
-      }
+      const raw = JSON.parse(text);
+      const isCall = this.endpoint.includes("appelfonction") && this.session;
       return new Response(
-        JSON.parse(text),
+        raw,
         headers,
         response.status,
-        (this.endpoint.includes("appelfonction") && this.session) ? this._processResponse(this.session, text) as T : JSON.parse(text) as T,
-        JSON.parse(text).Signature,
-        JSON.parse(text).dataNonSec
+        isCall ? this._processResponse(this.session!, raw) as T : raw as T,
+        raw.dataSec?.Signature,
+        raw.dataNonSec
       );
     } else {
       return new Response(text, headers, response.status, text as T)

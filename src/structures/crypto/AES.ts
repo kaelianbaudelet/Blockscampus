@@ -20,7 +20,7 @@ export class AES {
 
   public encrypt(str: Uint8Array | string, inBytes: true): Uint8Array;
   public encrypt(str: Uint8Array | string, inBytes?: false): string;
-  public encrypt(str: Uint8Array | string, inBytes = false) {
+  public encrypt(str: Uint8Array | string, inBytes = false): Uint8Array | string {
     const cipher: CipherWithOutput = cbc(this._dK, this._dIV);
     const encrypted = cipher.encrypt((str instanceof Uint8Array) ? str : utf8ToBytes(str));
     return inBytes ? encrypted : bytesToHex(encrypted);
@@ -28,7 +28,7 @@ export class AES {
 
   public decrypt(hex: string, inBytes: true): Uint8Array;
   public decrypt(hex: string, inBytes?: false): string;
-  public decrypt(hex: string, inBytes = false) {
+  public decrypt(hex: string, inBytes = false): Uint8Array | string {
     const cipher: CipherWithOutput = cbc(this._dK, this._dIV);
     const decrypted = cipher.decrypt(hexToBytes(hex));
     return inBytes ? decrypted : bytesToUtf8(decrypted);

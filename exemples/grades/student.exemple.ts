@@ -1,8 +1,7 @@
-import { TabsType } from "@/types/user";
 import { StudentLogin } from "../authentication/student.exemple";
 import chalk from "chalk";
 import { select } from "@inquirer/prompts";
-import { EvaluationStatus, type EvaluationStatusType, type GradeValue } from "@/types/grades";
+import { EvaluationStatus, type EvaluationStatusType, type GradeValue } from "../../src";
 
 if (require.main === module) {
   main();
@@ -10,29 +9,20 @@ if (require.main === module) {
 
 function formatStatus(status: EvaluationStatusType) {
   switch (status) {
-    case EvaluationStatus.ABSENT:
-      return "Absent"
-    case EvaluationStatus.ABSENT_WITH_ZERO:
-      return "Absent*"
-    case EvaluationStatus.DISABLED:
-      return "Dispense"
-    case EvaluationStatus.DISTINCTION:
-      return "Felicitations"
-    case EvaluationStatus.EXCUSED:
-      return "Inapte"
-    case EvaluationStatus.INCOMPLETE:
-      return "N. Rendu"
-    case EvaluationStatus.MISSING_WITH_ZERO:
-      return "N. Rendu*"
-    case EvaluationStatus.UNGRADED:
-      return "N.Noté"
-    default:
-      return "Erreur"
+    case EvaluationStatus.ABSENT: return "Absent"
+    case EvaluationStatus.ABSENT_WITH_ZERO: return "Absent*"
+    case EvaluationStatus.DISABLED: return "Dispensé"
+    case EvaluationStatus.DISTINCTION: return "Félicitations"
+    case EvaluationStatus.EXCUSED: return "Inapte"
+    case EvaluationStatus.INCOMPLETE: return "Non rendu"
+    case EvaluationStatus.MISSING_WITH_ZERO: return "Non rendu*"
+    case EvaluationStatus.UNGRADED: return "Non noté"
+    default: return "Erreur"
   }
 }
 
 function formatValue(grade?: GradeValue) {
-  if (!grade) return chalk.red("Unknown");
+  if (!grade) return chalk.gray("—");
   return grade.status === EvaluationStatus.GRADED
     ? chalk.green(`${grade.value}/${grade.outOf}`)
     : chalk.red(formatStatus(grade.status))
@@ -40,40 +30,31 @@ function formatValue(grade?: GradeValue) {
 
 async function main() {
   const account = await StudentLogin();
-  const tab = account.user.tab(TabsType.GRADES)
-  if (!tab) {
-    console.log(chalk.red("You didn't have the permission to access to the grades's tab"));
-    process.exit(1);
-  }
-  
+  const periods = await account.periods();
+
   const period = await select({
     message: "Choose the period you want to look at",
-    choices: tab.periods.map((item) => ({
-      name: item.label,
-      value: item
-    }))
+    choices: periods.map((item) => ({ name: `${item.label}${item.current ? " (current)" : ""}`, value: item }))
   })
-  const periodGrades = await account.grades(period);
+  const grades = await account.grades(period);
+  if (grades.message) console.log(chalk.yellow("*"), grades.message);
 
-  for (const subject of periodGrades.subjects) {
+  for (const subject of grades.subjects) {
     console.log(chalk.gray("┌─ "), chalk.green(subject.label))
-    console.log(chalk.gray("│  "))
     for (const grade of subject.grades) {
       console.log(
         chalk.gray("│  "),
-        chalk.white(grade.comment ?? `${subject.label}'s Homework`),
+        chalk.white(grade.comment ?? grade.createdAt?.toLocaleDateString("fr-FR") ?? "Devoir"),
         chalk.gray("—"),
         formatValue(grade.value),
-        `${chalk.dim(`(Class: ${formatValue(grade.average)}, Min: ${formatValue(grade.minimum)}, Max: ${formatValue(grade.maximum)})`)}`
+        chalk.dim(`(Promo: ${formatValue(grade.average)}, Min: ${formatValue(grade.minimum)}, Max: ${formatValue(grade.maximum)}, Coef: ${grade.coefficient})`)
       )
     }
-    console.log(chalk.gray("│  \n└─ "), "Subjet's Average", formatValue(periodGrades.average), `${chalk.dim(`(Class: ${formatValue(periodGrades.classAverage)})`)}`)
+    console.log(chalk.gray("└─ "), "Subject's average", formatValue(subject.average), chalk.dim(`(Promo: ${formatValue(subject.classAverage)})`))
   }
-  console.log(
-    chalk.green("\n*"),
-    "Period's Average:",
-    formatValue(periodGrades.average),
-    `${chalk.dim(`(Class: ${formatValue(periodGrades.classAverage)})`)}`
-  );
-  return periodGrades;
+  console.log(chalk.green("\n*"), "Period's average:", formatValue(grades.average), chalk.dim(`(Promo: ${formatValue(grades.classAverage)})`));
+
+  const transcript = await account.transcript(period);
+  console.log(chalk.green("*"), "Transcript:", transcript.message ?? `${transcript.subjects.length} subjects — ${transcript.absences ?? ""}`);
+  return grades;
 }

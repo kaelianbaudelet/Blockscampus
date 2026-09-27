@@ -5,6 +5,7 @@ export type GradeValue = {
   status:    EvaluationStatusType;
 }
 
+/** `EGenreAnnotation`, shared with PRONOTE. */
 export const EvaluationStatus = {
   ERROR:             -1,
   GRADED:             0,
@@ -19,3 +20,42 @@ export const EvaluationStatus = {
 };
 
 export type EvaluationStatusType = typeof EvaluationStatus[keyof typeof EvaluationStatus];
+
+export type GradingPeriod = {
+  id:            string;
+  label:         string;
+  /** Kind to send back to the server (`EGenreCalendrierPeriodeNotation`). */
+  kind:          number;
+  abbreviation?: string;
+  color?:        string;
+  from?:         Date;
+  to?:           Date;
+  /** Calendar (e.g. "Trimestriel") the period belongs to. */
+  calendar?:     { id: string; label?: string };
+  /** Promotion the period applies to. */
+  promotion?:    { id: string; label: string; kind?: number };
+  current:       boolean;
+};
+
+export type TranscriptAssignment = {
+  id:          string;
+  value?:      GradeValue;
+  coefficient: number;
+  comment?:    string;
+  isBonus:     boolean;
+  isOptional:  boolean;
+  kind?:       string;
+  periods:     string[];
+};
+
+export type TranscriptSubject = {
+  id:          string;
+  label:       string;
+  color?:      string;
+  module?:     string;
+  coefficient: number;
+  teachers:    string[];
+  assignments: TranscriptAssignment[];
+  /** Average per grading kind (e.g. "Contrôle continu"). */
+  averages:    Array<{ kind: string; abbreviation?: string; coefficient: number; value?: GradeValue }>;
+};

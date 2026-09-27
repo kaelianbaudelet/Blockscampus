@@ -1,16 +1,16 @@
-import { NOTSpace } from "@/types/authentication";
+import { HPSpace } from "@/types/authentication";
 import type { Instance } from "@/structures/Instance";
+import { Company } from "@/structures/users/Company";
 import { Authenticator } from "@/structures/authentication/Authenticator";
-import { Company } from "../users/Company";
 
 export class CompanyAuthenticator extends Authenticator {
   constructor(instance: Instance) {
     super(instance);
-    this.workspace = instance.workspaces.find((workspace) => workspace.type === NOTSpace.ENTERPRISE);
+    this.workspace = instance.workspace(HPSpace.COMPANY);
   }
 
   public override async finalize(): Promise<Company> {
-    const { session, settings } = await super.validate()
-    return await Company.load(session, settings, this.instance)
+    const { session, settings, raw } = await super.validate()
+    return (await Company.load(session, settings, this.instance, raw)).selectDefaultMember()
   }
 }

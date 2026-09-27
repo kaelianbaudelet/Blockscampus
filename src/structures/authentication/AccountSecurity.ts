@@ -1,7 +1,7 @@
-import type { AuthentificationResponse } from "../../types/responses/authentication";
-import { AuthenticationError } from "../errors/AuthenticationError";
-import { Request } from "../../structures/network/Request";
-import type { Session } from "../Session";
+import type { AuthentificationResponse } from "@/types/responses/authentication";
+import { AuthenticationError } from "@/structures/errors/AuthenticationError";
+import { Request } from "@/structures/network/Request";
+import type { Session } from "@/structures/Session";
 
 export class AccountSecurity {
   private _password?: string;
